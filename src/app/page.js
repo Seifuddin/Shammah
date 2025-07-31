@@ -9,6 +9,10 @@ import Aboutus from "@/components/AboutUs";
 import EventsCalendar from "@/components/Events";
 import Sermon from "@/components/Sermon";
 import LatestBlogSection from "@/components/BlogSection";
+import TithesAndOffering from "@/components/TithesAndOffering";
+import GivingForm from "@/components/GivingForm";
+import PraiseAndWorship from "@/components/PraiseAndWorship";
+import SupportMission from "@/components/SupportMission";
 
 export default function Home() {
   return (
@@ -18,40 +22,61 @@ export default function Home() {
         <Heroo />
       </section>
 
-      {/* Blog */}
+      {/* Blog 
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <Aboutus />
       </section>
+
+      */}
+
+      {/* Blog */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <SupportMission />
+      </section>
+
+
 
       {/* About Us */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <LatestBlogSection />
       </section>
+      
 
-      {/* Events */}
+      {/* About Us */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <PraiseAndWorship />
+      </section>
+
+      {/* Tithes */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <TithesAndOffering />
+
+      </section>
+
+      {/* Events 
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <Events />
       </section>
+      */}
 
-      {/* Sermons */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <Sermon />
-      </section>
-
-      {/* Ministries */}
+      {/* Ministries 
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <Ministries />
       </section>
+
+      */}
 
       {/* Visit Us */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <VisitUs />
       </section>
 
-      {/* Newsletter Signup */}
+      {/* Newsletter Signup 
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100">
         <NewsletterSignup />
       </section>
+      */}
+
     </main>
   );
 }

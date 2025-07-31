@@ -12,7 +12,7 @@ export default function NewsletterSignup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: integrate email API (e.g. EmailJS, Resend, backend endpoint)
+    // TODO: integrate email API (e.9g. EmailJS, Resend, backend endpoint)
     alert("Thank you! Your request has been received.");
     setForm({ email: "", message: "" });
   };

@@ -10,7 +10,7 @@ export default function HeroSection() {
       style={{ backgroundImage: "url('/images/0_X9GoivpFR0-w0b3_.jpg')" }}
     >
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60 z-0" />
+      <div className="absolute inset-0 bg-blac0 z-0" />
 
       {/* Two-column layout */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center h-full">
@@ -22,13 +22,13 @@ export default function HeroSection() {
           className="text-left"
         >
           <h1 className="text-5xl sm:text-7xl font-extrabold leading-tight mb-4">
-            God loves you all...
+            Hope Restoration Centre
           </h1>
           <p className="text-lg sm:text-2xl text-gray-200 mb-6 max-w-xl font-mono">
             Welcome to Shammah Gospel Church. A place of worship, love, and spiritual growth. Join us every Sunday
             for a powerful encounter with God.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex gap-4">
             <Link
               href="/visit"
               className="bg-white text-gray-800 px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition"
