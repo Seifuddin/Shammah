@@ -3,7 +3,7 @@ title: "Community Outreach Experience"
 date: "2025-06-22"
 author: "Pastor Grace"
 tags: ["Community", "Outreach", "Service"]
-banner: "/images/pexels-pixabay-268533.jpg"
+banner: "/images/worship.jpg"
 ---
 
 This Sunday we gathered for a powerful worship experience at Shammah Gospel Church...

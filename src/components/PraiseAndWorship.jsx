@@ -16,8 +16,8 @@ export default function PraiseWorshipTeam() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <section className="px-4 py-16 bg-gradient-to-r from-yellow-100 via-white to-yellow-50">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="w-full bg-gradient-to-r from-yellow-100 via-white to-yellow-50">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4 py-16">
         {/* Left Column – Text and Video */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}

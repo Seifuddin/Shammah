@@ -16,63 +16,63 @@ import SupportMission from "@/components/SupportMission";
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main className="overflow-x-hidden">
       {/* Hero Section */}
       <section>
         <Heroo />
       </section>
 
       {/* Blog 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="">
         <Aboutus />
       </section>
 
       */}
 
       {/* Blog */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="">
         <SupportMission />
       </section>
 
 
 
       {/* About Us */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
         <LatestBlogSection />
       </section>
       
 
       {/* About Us */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="">
         <PraiseAndWorship />
       </section>
 
       {/* Tithes */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="">
         <TithesAndOffering />
 
       </section>
 
       {/* Events 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="">
         <Events />
       </section>
       */}
 
       {/* Ministries 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="">
         <Ministries />
       </section>
 
       */}
 
       {/* Visit Us */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="">
         <VisitUs />
       </section>
 
       {/* Newsletter Signup 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100">
+      <section className=" bg-gray-100">
         <NewsletterSignup />
       </section>
       */}

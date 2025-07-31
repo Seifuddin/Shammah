@@ -3,7 +3,7 @@ title: "Youth Conference 2025: Ignited for Purpose"
 date: "2025-07-15"
 author: "Pastor Joy M."
 tags: ["Youth", "Conference", "Purpose", "Inspiration"]
-banner: "/images/pexels-pixabay-268533.jpg"
+banner: "/images/worship.jpg"
 ---
 
 The 2025 Youth Conference was a vibrant gathering of young believers, 

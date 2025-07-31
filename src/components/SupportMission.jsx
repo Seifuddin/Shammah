@@ -4,8 +4,8 @@ import { FaUsers, FaChild, FaHandsHelping } from "react-icons/fa";
 
 export default function SupportMission() {
   return (
-    <section className="py-16 px-4 md:px-20 bg-gradient-to-r from-yellow-100 via-white to-yellow-50">
-      <div className="grid md:grid-cols-2 gap-12 items-center">
+    <section className="w-full bg-gradient-to-r from-yellow-100 via-white to-yellow-50">
+      <div className="grid md:grid-cols-2 gap-12 items-center py-16 px-4 md:px-20">
         {/* Left: Text Content */}
         <div>
           <motion.h2
