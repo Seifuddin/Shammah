@@ -133,6 +133,7 @@ export default function GivingForm() {
           {status && <p className="text-center mt-4 text-gray-700">{status}</p>}
         </form>
       </div>
-    </section>
+    </section>      
   );
 }
+ 

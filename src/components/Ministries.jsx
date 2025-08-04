@@ -22,18 +22,6 @@ const ministries = [
       "Encouraging and nurturing women to grow spiritually and impact their families.",
   },
   {
-    icon: <Briefcase size={28} className="text-blue-700" />,
-    title: "Men Fellowship",
-    description:
-      "Building strong, God-fearing men through discipleship and accountability.",
-  },
-  {
-    icon: <Baby size={28} className="text-blue-700" />,
-    title: "Children Ministry",
-    description:
-      "Teaching biblical truths to kids in a fun, safe, and loving environment.",
-  },
-  {
     icon: <BookOpen size={28} className="text-blue-700" />,
     title: "Bible Study Groups",
     description:
@@ -43,7 +31,7 @@ const ministries = [
 
 export default function Ministries() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gradient-to-b from-blue-100 via-white to-blue-100">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-3xl font-bold text-blue-800 text-center mb-10"

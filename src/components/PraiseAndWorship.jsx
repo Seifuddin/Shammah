@@ -4,12 +4,12 @@ import { useState } from "react";
 import Image from "next/image";
 
 const images = [
+  "/images/0_X9GoivpFR0-w0b3_.jpg",
   "/images/edward-cisneros-KoKAXLKJwhk-unsplash-scaled.jpg",
+  "/images/worship.jpg",
   "/images/edward-cisneros-KoKAXLKJwhk-unsplash-scaled.jpg",
-  "/images/edward-cisneros-KoKAXLKJwhk-unsplash-scaled.jpg",
-  "/images/edward-cisneros-KoKAXLKJwhk-unsplash-scaled.jpg",
-  "/images/edward-cisneros-KoKAXLKJwhk-unsplash-scaled.jpg",
-  "/images/edward-cisneros-KoKAXLKJwhk-unsplash-scaled.jpg",
+  "/images/worship.jpg",
+  "/images/0_X9GoivpFR0-w0b3_.jpg",
 ];
 
 export default function PraiseWorshipTeam() {

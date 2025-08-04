@@ -35,14 +35,14 @@ export default function TithesAndOffering() {
         >
           <button
             onClick={() => setShowGivingModal(true)}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition"
+            className="bg-blue-600 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition"
           >
             Give Online
           </button>
 
           <button
             onClick={() => setShowBankModal(true)}
-            className="bg-white border border-blue-400 text-blue-800 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-100 transition"
+            className="bg-yellow-600 border border-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition"
           >
             View Bank Details
           </button>
@@ -104,10 +104,10 @@ export default function TithesAndOffering() {
 
               <h3 className="text-xl font-semibold text-blue-700 mb-4 text-center">Bank / Mobile Giving Details</h3>
               <ul className="text-gray-700 space-y-2">
-                <li><strong>Bank Name:</strong> Kingdom Bank</li>
-                <li><strong>Account Name:</strong> Grace Church Ministries</li>
-                <li><strong>Account Number:</strong> 0123456789</li>
-                <li><strong>Mpesa Paybill:</strong> 123456 &nbsp; | &nbsp; <strong>Account:</strong> Offering</li>
+                <li><strong>Bank Name:</strong> Bingwa Sacco</li>
+                <li><strong>Account Name:</strong> Shammah Gospel Church</li>
+                <li><strong>Account Number:</strong> 36321</li>
+                <li><strong>Mpesa Paybill:</strong> 765244 &nbsp; | &nbsp; <strong>Account:</strong> Offering</li>
               </ul>
             </motion.div>
           </motion.div>

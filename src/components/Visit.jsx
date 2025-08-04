@@ -4,7 +4,7 @@ import { MapPin, Clock } from "lucide-react";
 
 export default function VisitUs() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-gradient-to-b from-blue-100 via-white to-blue-100">
       <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
         {/* Text Content */}
         <motion.div
@@ -22,15 +22,15 @@ export default function VisitUs() {
           <div className="flex items-start gap-3 mb-3 text-gray-700 text-sm">
             <MapPin size={20} className="text-blue-700" />
             <span>
-              Shammah Gospel Church, 123 Kingdom Road, Nairobi, Kenya
+              Shammah Gospel Church, Kiamutugu - Mwanianjau Road, Kiamutugu Town, Kirinyaga County
             </span>
           </div>
 
           <div className="flex items-start gap-3 mb-6 text-gray-700 text-sm">
             <Clock size={20} className="text-blue-700" />
             <span>
-              Sunday Service: 9:00 AM – 12:00 PM <br />
-              Midweek Fellowship: Wednesdays at 6:00 PM
+              Sunday Service: 9:00 AM – 1:00 PM <br />
+              Midweek Fellowship: Wednesdays & Thursdays at 3:00 PM
             </span>
           </div>
 

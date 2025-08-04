@@ -1,5 +1,5 @@
 import Heroo from "@/components/Heroo";
-import AboutUs from "@/components/AboutUs";
+import AboutUs from "@/components/About";
 import Events from "@/components/Events";
 import Sermons from "@/components/Sermons";
 import Ministries from "@/components/Ministries";
@@ -13,6 +13,8 @@ import TithesAndOffering from "@/components/TithesAndOffering";
 import GivingForm from "@/components/GivingForm";
 import PraiseAndWorship from "@/components/PraiseAndWorship";
 import SupportMission from "@/components/SupportMission";
+import HeroSect from "@/components/Hero";
+import Ready from "@/components/Ready";
 
 export default function Home() {
   return (
@@ -22,35 +24,29 @@ export default function Home() {
         <Heroo />
       </section>
 
-      {/* Blog 
+      {/* Blog */}
       <section className="">
         <Aboutus />
       </section>
 
-      */}
+      {/* Ministries */}
+      <section className="">
+        <Ministries />
+      </section>
 
       {/* Blog */}
       <section className="">
         <SupportMission />
       </section>
 
-
-
-      {/* About Us */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <LatestBlogSection />
+      {/* Tithes */}
+      <section className="">
+        <TithesAndOffering />
       </section>
-      
 
       {/* About Us */}
       <section className="">
         <PraiseAndWorship />
-      </section>
-
-      {/* Tithes */}
-      <section className="">
-        <TithesAndOffering />
-
       </section>
 
       {/* Events 
@@ -58,13 +54,11 @@ export default function Home() {
         <Events />
       </section>
       */}
-
-      {/* Ministries 
+      
+      {/* Events */}
       <section className="">
-        <Ministries />
+        <Ready />
       </section>
-
-      */}
 
       {/* Visit Us */}
       <section className="">
@@ -76,6 +70,11 @@ export default function Home() {
         <NewsletterSignup />
       </section>
       */}
+
+      {/* About Us */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <LatestBlogSection />
+      </section>
 
     </main>
   );

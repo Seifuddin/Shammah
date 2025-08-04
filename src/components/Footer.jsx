@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 grid md:grid-cols-4 sm:grid-cols-2 gap-8">
         {/* Logo & Mission */}
         <div>
-          <h2 className="text-2xl font-bold mb-4">Shammah Gospel</h2>
+          <h2 className="text-2xl font-bold mb-4">Shammah Gospel Church</h2>
           <p className="text-sm leading-relaxed">
             A Christ-centered church committed to spreading the gospel, building
             faith, and serving the community with love and purpose.
@@ -47,8 +47,8 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-3">Service Times</h3>
           <ul className="text-sm space-y-2">
-            <li>Sunday Worship: 9:00 AM – 12:00 PM</li>
-            <li>Midweek Service: Wed 6:00 PM – 8:00 PM</li>
+            <li>Sunday Worship: 9:00 AM – 1:00 PM</li>
+            <li>Midweek Service: Wed & Thur 3:00 PM – 4:00 PM</li>
             <li>Youth Fellowship: Sat 4:00 PM – 6:00 PM</li>
           </ul>
         </div>
@@ -57,7 +57,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
           <p className="text-sm mb-3">Email: info@shammahgospel.org</p>
-          <p className="text-sm mb-3">Phone: +254 712 345 678</p>
+          <p className="text-sm mb-3">Phone: +254 722 222 003</p>
 
           <div className="flex space-x-4 mt-4">
             <a href="#" className="hover:text-blue-300">

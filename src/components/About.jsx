@@ -13,7 +13,7 @@ export default function AboutUs() {
 
       {/* Content */}
       <div className="relative z-10">
-        {/* Intro 
+        {/* Intro */}
         <div className="text-center py-6 px-4 max-w-6xl mx-auto">
                   <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-500 mb-5">
                     Welcome to Shammah <span className="text-orange-500"></span>
@@ -22,7 +22,7 @@ export default function AboutUs() {
                     Join us every Sunday at 10 AM for worship and fellowship.
                   </p>
         </div>
-        */}
+        
         {/* Image + Who We Are */}
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 px-6 pt-3 pb-16 items-center">
           <img
