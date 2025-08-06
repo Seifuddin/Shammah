@@ -26,23 +26,23 @@ const events = [
 
 export default function Events() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl font-bold text-blue-800 text-center mb-10"
+          className="text-4xl font-extrabold text-yellow-600 text-center mb-10"
         >
-          Upcoming Events
+         Church Events
         </motion.h2>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-3 lg:grid-cols-3 gap-4">
           {events.map((event, index) => (
             <motion.div
               key={index}
-              className="bg-gradient-to-r from-yellow-100 via-white to-yellow-50 rounded-lg shadow-md p-6 border-l-4 border-blue-700"
+              className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-700"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}

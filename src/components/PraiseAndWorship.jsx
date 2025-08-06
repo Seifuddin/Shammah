@@ -8,8 +8,6 @@ const images = [
   "/images/edward-cisneros-KoKAXLKJwhk-unsplash-scaled.jpg",
   "/images/worship.jpg",
   "/images/edward-cisneros-KoKAXLKJwhk-unsplash-scaled.jpg",
-  "/images/worship.jpg",
-  "/images/0_X9GoivpFR0-w0b3_.jpg",
 ];
 
 export default function PraiseWorshipTeam() {
@@ -17,14 +15,14 @@ export default function PraiseWorshipTeam() {
 
   return (
     <section className="w-full bg-gradient-to-r from-yellow-100 via-white to-yellow-50">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4 py-16">
+      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-16">
         {/* Left Column – Text and Video */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl font-bold text-yellow-800 mb-4">
+          <h2 className="text-4xl font-extrabold text-yellow-600 mb-4">
             Praise & Worship Ministry
           </h2>
           <p className="text-lg text-gray-600 mb-6">
@@ -51,7 +49,7 @@ export default function PraiseWorshipTeam() {
           <h3 className="text-2xl font-semibold text-yellow-800 mb-4">
             Worship in Action
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
             {images.map((src, index) => (
               <div
                 key={index}

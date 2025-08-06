@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
-  '/images/slider1.jpg',
-  '/images/slider2.jpg',
-  '/images/slider3.jpg',
+  '/images/IMG-20220321-WA0000.jpg',
+  '/images/0_X9GoivpFR0-w0b3_.jpg',
+  '/images/1000_F_382847586_DB04vLolKezvGHLKHbov6nLrMsTUsRmw.jpg',
 ];
 
 export default function ImageSlider() {
@@ -34,32 +34,5 @@ export default function ImageSlider() {
         />
       </AnimatePresence>
     </div>
-  );
-}
-
-// Update: pages/index.jsx
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import HeroSection from '@/components/HeroSection';
-import NewsletterForm from '@/components/NewsletterForm';
-import MapSection from '@/components/MapSection';
-import ImageSlider from '@/components/ImageSlider';
-
-export default function Home() {
-  return (
-    <>
-      <Navbar />
-      <HeroSection />
-      <ImageSlider />
-      <main className="container mx-auto px-4 py-10">
-        <section className="mb-12 text-center">
-          <h3 className="text-2xl font-bold">Upcoming Events</h3>
-          <p className="text-gray-600">Stay updated with what's happening.</p>
-        </section>
-        <NewsletterForm />
-        <MapSection />
-      </main>
-      <Footer />
-    </>
   );
 }

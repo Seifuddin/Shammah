@@ -6,7 +6,7 @@ import Ministries from "@/components/Ministries";
 import VisitUs from "@/components/Visit";
 import NewsletterSignup from "@/components/NewsletterForm";
 import Aboutus from "@/components/AboutUs";
-import EventsCalendar from "@/components/Events";
+import EventsCalendar from "@/components/EventsCalendar";
 import Sermon from "@/components/Sermon";
 import LatestBlogSection from "@/components/BlogSection";
 import TithesAndOffering from "@/components/TithesAndOffering";
@@ -15,6 +15,9 @@ import PraiseAndWorship from "@/components/PraiseAndWorship";
 import SupportMission from "@/components/SupportMission";
 import HeroSect from "@/components/Hero";
 import Ready from "@/components/Ready";
+import Ministry from "@/components/Ministry";
+import Videos from "@/components/Videos";
+import SermonPlayer from "@/components/SermonPlayer";
 
 export default function Home() {
   return (
@@ -22,6 +25,11 @@ export default function Home() {
       {/* Hero Section */}
       <section>
         <Heroo />
+        <SermonPlayer />
+      </section>
+       {/* Events */}
+      <section className="">
+        <Events />
       </section>
 
       {/* Blog */}
@@ -29,11 +37,16 @@ export default function Home() {
         <Aboutus />
       </section>
 
-      {/* Ministries */}
+      {/* Blog */}
+      <section className="">
+        <Ministry />
+      </section>
+
+      {/* Ministries 
       <section className="">
         <Ministries />
       </section>
-
+*/}
       {/* Blog */}
       <section className="">
         <SupportMission />
@@ -49,15 +62,10 @@ export default function Home() {
         <PraiseAndWorship />
       </section>
 
-      {/* Events 
-      <section className="">
-        <Events />
-      </section>
-      */}
-      
       {/* Events */}
       <section className="">
         <Ready />
+        <Sermon />
       </section>
 
       {/* Visit Us */}
@@ -65,14 +73,10 @@ export default function Home() {
         <VisitUs />
       </section>
 
-      {/* Newsletter Signup 
-      <section className=" bg-gray-100">
-        <NewsletterSignup />
-      </section>
-      */}
+      
 
       {/* About Us */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="">
         <LatestBlogSection />
       </section>
 

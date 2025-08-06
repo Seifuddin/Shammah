@@ -6,12 +6,12 @@ export default function LatestBlogSection() {
   const latestPosts = getAllPosts().slice(0, 3);
 
   return (
-    <section className="mt-12">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-gray-800">
+    <section className="pt-12 bg-gray-50">
+      <h2 className="text-2xl text-center sm:text-3xl font-bold mb-6 text-gray-800">
         Latest from Our Blog
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {latestPosts.map((post) => (
           <div key={post.slug} className="bg-white rounded-lg shadow hover:shadow-md transition p-4">
             <img

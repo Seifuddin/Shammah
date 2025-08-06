@@ -13,7 +13,7 @@ export default function VisitUs() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold text-blue-800 mb-4">Visit Us</h2>
+          <h2 className="text-4xl font-extrabold text-blue-600 mb-4">Visit Us</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             We would love to welcome you to Shammah Gospel Church! Come join us
             in worship, fellowship, and spiritual growth.

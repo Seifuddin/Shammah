@@ -40,7 +40,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto flex justify-between items-center px-4 py-4">
+      <div className="container mx-auto flex justify-between items-center px-4 py-6">
         <h1 className="text-2xl font-bold text-blue-700">Shammah Gospel</h1>
 
         {/* Desktop menu */}
