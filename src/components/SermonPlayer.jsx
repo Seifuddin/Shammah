@@ -1,7 +1,7 @@
 // File: components/SermonPlayer.jsx
 export default function SermonPlayer() {
   return (
-    <div className="container mx-auto px-4 py-16 mt-6 bg-white">
+    <div className="relative">
       <h2 className="text-2xl text-black font-semibold mb-2 text-center">Latest Sermon</h2>
       <div className=" aspect-w-16 aspect-h-9">
         <iframe

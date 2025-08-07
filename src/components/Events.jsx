@@ -26,7 +26,7 @@ const events = [
 
 export default function Events() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-100">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -38,7 +38,7 @@ export default function Events() {
          Church Events
         </motion.h2>
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-3 lg:grid-cols-3 gap-4">
           {events.map((event, index) => (
             <motion.div
               key={index}

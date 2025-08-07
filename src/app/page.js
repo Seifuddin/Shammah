@@ -17,7 +17,6 @@ import HeroSect from "@/components/Hero";
 import Ready from "@/components/Ready";
 import Ministry from "@/components/Ministry";
 import Videos from "@/components/Videos";
-import SermonPlayer from "@/components/SermonPlayer";
 
 export default function Home() {
   return (
@@ -28,13 +27,12 @@ export default function Home() {
       </section>
        {/* Events */}
       <section className="">
-        <Events />
       </section>
 
       {/* Blog */}
       <section className="">
         <Aboutus />
-        <SermonPlayer />
+        <Events />
       </section>
 
       {/* Blog */}

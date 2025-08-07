@@ -21,10 +21,10 @@ export default function HeroSection() {
           transition={{ duration: 1 }}
           className="text-left"
         >
-          <h1 className="text-5xl text-white sm:text-7xl font-extrabold leading-tight mb-4">
-            Hope Restoration Centre!!!
+          <h1 className="text-5xl text-white md:text-7xl font-extrabold leading-tight mb-4">
+            Hope Restoration Center!!!
           </h1>
-          <p className="text-xl text-gray-200 mb-6 max-w-xl">
+          <p className="text-lg text-gray-200 mb-6 max-w-xl">
             Welcome to Shammah Gospel Church. A place of worship, love, and spiritual growth. Join us every Sunday
             for a powerful encounter with God.
           </p>
