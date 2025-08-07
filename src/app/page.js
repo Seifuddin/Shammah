@@ -32,7 +32,6 @@ export default function Home() {
       {/* Blog */}
       <section className="">
         <Aboutus />
-        <Events />
       </section>
 
       {/* Blog */}
