@@ -13,7 +13,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/60 z-0" />
 
       {/* Two-column layout */}
-      <div className="relative z-10 w-full max-w-11/12 mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center h-full">
+      <div className="relative z-10 w-full max-w-11/12 mx-auto px-3 grid grid-cols-1 md:grid-cols-2 items-center h-full">
         {/* Left column: text content */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}

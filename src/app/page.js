@@ -25,7 +25,6 @@ export default function Home() {
       {/* Hero Section */}
       <section>
         <Heroo />
-        <SermonPlayer />
       </section>
        {/* Events */}
       <section className="">
@@ -35,6 +34,7 @@ export default function Home() {
       {/* Blog */}
       <section className="">
         <Aboutus />
+        <SermonPlayer />
       </section>
 
       {/* Blog */}

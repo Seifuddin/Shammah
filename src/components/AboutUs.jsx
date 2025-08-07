@@ -5,7 +5,7 @@ import ImageSlider from "@/components/ImageSlider";
 
 export default function Aboutus() {
   return (
-    <section className="py-16 bg-gradient-to-r from-blue-50 via-white to-blue-100">
+    <section className="py-16 bg-gradient-to-r from-blue-100 via-white to-blue-100">
       
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
         {/* Image */}
@@ -15,7 +15,7 @@ export default function Aboutus() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="rounded-lg max-h-96 overflow-hidden shado">
+          <div className="rounded-lg max-h-60 md:max-h-96 overflow-hidden shado">
             <ImageSlider />
             {/* <Image
               src="/images/image-removebg-preview (13).png"
