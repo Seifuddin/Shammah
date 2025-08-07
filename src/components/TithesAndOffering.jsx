@@ -42,7 +42,7 @@ export default function TithesAndOffering() {
 
           <button
             onClick={() => setShowBankModal(true)}
-            className="bg-yellow-600 border border-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition"
+            className="bg-yellow-600 border text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition"
           >
             View Bank Details
           </button>

@@ -21,23 +21,23 @@ export default function HeroSection() {
           transition={{ duration: 1 }}
           className="text-left"
         >
-          <h1 className="text-5xl text-white md:text-7xl font-extrabold leading-tight mb-4">
+          <h1 className="text-3xl text-white md:text-7xl font-extrabold leading-tight mb-4">
             Hope Restoration Center!!!
           </h1>
           <p className="text-lg text-gray-200 mb-6 max-w-xl">
             Welcome to Shammah Gospel Church. A place of worship, love, and spiritual growth. Join us every Sunday
             for a powerful encounter with God.
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-3">
             <Link
               href="/visit"
-              className="bg-yellow-600 text-white px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition"
+              className="bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition"
             >
               Plan a Visit
             </Link>
             <Link
               href="/live"
-              className="bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-700 transition"
+              className="bg-white text-blue-600 px-6 py-3 rounded-full font-medium hover:bg-blue-700 transition"
             >
               Watch Live
             </Link>

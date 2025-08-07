@@ -5,7 +5,7 @@ import SermonPlayer from "@/components/SermonPlayer";
 
 export default function Aboutus() {
   return (
-    <section className="py-16 bg-gradient-to-r from-blue-50 via-white to-orange-50">
+    <section className="py-16 bg-white">
       
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
         {/* Image */}
