@@ -4,7 +4,7 @@ import { MapPin, Clock } from "lucide-react";
 
 export default function VisitUs() {
   return (
-    <section className="py-16 bg-blue-100">
+    <section className="py-16 bg-gradient-to-r from-yellow-100 via-white to-yellow-100">
       <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
         {/* Text Content */}
         <motion.div
