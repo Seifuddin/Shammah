@@ -35,7 +35,7 @@ export default function Home() {
       </section>
 
       {/* Blog */}
-      <section className="">
+      <section className="bg-gray-100">
         <Ministry />
       </section>
 

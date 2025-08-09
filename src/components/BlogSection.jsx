@@ -6,7 +6,7 @@ export default function LatestBlogSection() {
   const latestPosts = getAllPosts().slice(0, 3);
 
   return (
-    <section className="pt-12 bg-gray-50">
+    <section className="pt-12 bg-white">
       <h2 className="text-2xl text-center sm:text-3xl font-bold mb-6 text-gray-800">
         Latest from Our Blog
       </h2>

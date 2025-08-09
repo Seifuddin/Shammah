@@ -14,7 +14,7 @@ export default function PraiseWorshipTeam() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <section className="w-full bg-gradient-to-r from-yellow-100 via-white to-yellow-50">
+    <section className="w-full bg-white bggradient-to-r from-yellow-100 via-white to-yellow-50">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-16">
         {/* Left Column – Text and Video */}
         <motion.div
@@ -22,7 +22,7 @@ export default function PraiseWorshipTeam() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl font-extrabold text-yellow-600 mb-4">
+          <h2 className="text-2xl md:text-4xl font-extrabold text-blue-600 mb-4">
             Praise & Worship Ministry
           </h2>
           <p className="text-lg text-gray-600 mb-6">
@@ -46,7 +46,7 @@ export default function PraiseWorshipTeam() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-2xl font-semibold text-yellow-800 mb-4">
+          <h3 className="text-2xl font-semibold text-blue-800 mb-4">
             Worship in Action
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-2 gap-4">

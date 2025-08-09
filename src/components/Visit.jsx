@@ -4,7 +4,7 @@ import { MapPin, Clock } from "lucide-react";
 
 export default function VisitUs() {
   return (
-    <section className="py-16 bg-gradient-to-b from-blue-100 via-white to-blue-100">
+    <section className="py-16 bg-blue-100">
       <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
         {/* Text Content */}
         <motion.div
@@ -13,7 +13,7 @@ export default function VisitUs() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-extrabold text-blue-600 mb-4">Visit Us</h2>
+          <h2 className="text-2xl md:text-4xl font-extrabold text-blue-600 mb-4">Visit Us</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             We would love to welcome you to Shammah Gospel Church! Come join us
             in worship, fellowship, and spiritual growth.

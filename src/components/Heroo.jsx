@@ -7,10 +7,10 @@ export default function HeroSection() {
   return (
     <section
       className="relative bg-cover bg-center h-[90vh] flex items-center text-white"
-      style={{ backgroundImage: "url('/images/0_X9GoivpFR0-w0b3_.jpg')" }}
+      style={{ backgroundImage: "url('/images/edward-cisneros-KoKAXLKJwhk-unsplash-scaled.jpg')" }}
     >
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60 z-0" />
+      <div className="absolute inset-0 bg-blac z-0" />
 
       {/* Two-column layout */}
       <div className="relative z-10 w-full max-w-11/12 mx-auto px-3 grid grid-cols-1 md:grid-cols-2 items-center h-full">
@@ -21,7 +21,10 @@ export default function HeroSection() {
           transition={{ duration: 1 }}
           className="text-left"
         >
-          <h1 className="text-4xl text-white md:text-7xl font-extrabold leading-tight mb-4">
+          <h1 className="text-xl text-white font-bold leading-tight mb-4">
+            There's a place for you...
+          </h1>
+          <h1 className="text-5xl text-white md:text-7xl font-extrabold leading-tight mb-4">
             Hope Restoration Center!!!
           </h1>
           <p className="text-lg text-gray-200 mb-6 max-w-xl">

@@ -25,7 +25,7 @@ export default function Sermon() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <motion.h2
-          className="text-3xl font-bold text-blue-800 text-center mb-10"
+          className="text-xl font-bold text-blue-800 text-center mb-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
