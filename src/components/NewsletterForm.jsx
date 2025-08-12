@@ -18,7 +18,7 @@ export default function NewsletterSignup() {
   };
 
   return (
-    <section className="py-16 bg-blue-100 text-blue-900">
+    <section className="py-16 bg-gray-100 text-blue-900">
       <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <motion.div
@@ -28,12 +28,12 @@ export default function NewsletterSignup() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl font-bold mb-4">Stay Connected</h2>
-          <p className="mb-4 text-blue-100">
+          <p className="mb-4 text-blue-700">
             Subscribe to our newsletter for inspirational messages, upcoming
             events, and weekly devotionals. You can also request a prayer below —
             we're here for you.
           </p>
-          <ul className="text-blue-200 space-y-2 text-sm">
+          <ul className="text-blue-800 space-y-2 text-sm">
             <li className="flex items-center gap-2">
               <Mail size={16} /> info@shammahgospel.org
             </li>
@@ -60,7 +60,7 @@ export default function NewsletterSignup() {
               required
               value={form.email}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border border-blue-400 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="you@example.com"
             />
           </div>
@@ -71,7 +71,7 @@ export default function NewsletterSignup() {
               rows="4"
               value={form.message}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border border-blue-400 rounded resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Share your prayer need..."
             ></textarea>
           </div>

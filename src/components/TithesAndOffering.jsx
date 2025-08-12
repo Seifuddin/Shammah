@@ -8,7 +8,7 @@ export default function TithesAndOffering() {
   const [showBankModal, setShowBankModal] = useState(false);
 
   return (
-    <section className="bg-gradient-to-b from-blue-100 via-white to-blue-100 py-16 px-6 sm:px-10 lg:px-20 relative z-0">
+    <section className="bg-gradient-to-b from-blue-200 via-white to-blue-200 py-16 px-6 sm:px-10 lg:px-20 relative z-0">
       <div className="max-w-5xl mx-auto text-center">
         <motion.h2
           className="text-2xl md:text-4xl font-extrabold text-blue-800 mb-4"

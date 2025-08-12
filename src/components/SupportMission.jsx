@@ -4,7 +4,7 @@ import { FaUsers, FaChild, FaHandsHelping } from "react-icons/fa";
 
 export default function SupportMission() {
   return (
-    <section className="w-full bg-gradient-to-r from-yellow-100 via-white to-yellow-100">
+    <section className="w-full bg-white">
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center py-16 md:px-20">
         {/* Left: Text Content */}
         <div>
@@ -78,7 +78,7 @@ export default function SupportMission() {
           transition={{ duration: 0.6 }}
         >
           <img
-            src="/images/IMG-20220321-WA0000.jpg"
+            src="/images/1754933796240.jpg"
             alt="Feeding Children"
             className="w-full h-auto object-cover max-h-96 rounded-xl shadow-lg"
           />

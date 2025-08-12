@@ -4,22 +4,22 @@ import Image from "next/image";
 
 const services = [
   {
-    title: "Youth Ministry",
+    title: "Raha Premium Project - Kavagara",
     description:
       "Empowering the next generation with faith, fellowship, and leadership.",
-    image: "/images/61378e9d-082c-42c2-866b-5e2bbe5f61a4_large.webp",
+    image: "/images/1754933627001.jpg",
   },
   {
-    title: "Women Ministry",
+    title: "Feeding Program",
     description:
       "Encouraging and nurturing women to grow spiritually and impact their families.",
-    image: "/images/download.jpg",
+    image: "/images/1754933799788.jpg",
   },
   {
-    title: "Bible Study Groups",
+    title: "Free Medical Camp",
     description:
       "Small group fellowships that dive deeper into the Word of God.",
-    image: "/images/61378e9d-082c-42c2-866b-5e2bbe5f61a4_large.webp",
+    image: "/images/1754933930596.jpg",
   },
 ];
 
@@ -33,7 +33,7 @@ export default function Ministry() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Our Ministries
+          JCM to the community
         </motion.h2>
       {/* Desktop Layout */}
       <div className="hidden md:grid grid-cols-2 gap-6">
