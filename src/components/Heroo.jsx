@@ -15,7 +15,7 @@ export default function HeroSection() {
       {/* Two-column layout */}
       <div className="relative z-10 w-full max-w-11/12 mx-auto px-3 grid grid-cols-1 md:grid-cols-2 items-center h-full">
         {/* Left column: text content */}
-        <motion.div
+        <motion.div 
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
@@ -25,7 +25,7 @@ export default function HeroSection() {
             With Pastor Ben (Kiengei)
           </h1>
           <h1 className="text-5xl text-white md:text-7xl font-extrabold leading-tight mb-4">
-            Jesus Christ Companion Ministry (JCM)
+            Jesus Christ Companion Ministry
           </h1>
           <p className="text-lg md:text-xl font font-semibold text-gray-200 mb-6 max-w-xl">
             Welcome to Jesus Christ Companion Ministry (JCM). A place of worship, love, and spiritual growth. Join us every Sunday

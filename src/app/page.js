@@ -19,6 +19,7 @@ import Ministry from "@/components/Ministry";
 import Videos from "@/components/Videos";
 import Projects from "@/components/Projects";
 import Feeding from "@/components/Feeding";
+import SwiperGrid from "@/components/SwiperGrid";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
       {/* Blog */}
       <section className="">
         <Aboutus />
+        <Sermon />
       </section>
 
       {/* Blog */}

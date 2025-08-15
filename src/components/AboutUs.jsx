@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Aboutus() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-gray-100">
       
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
         {/* Image */}

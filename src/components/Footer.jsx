@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 grid md:grid-cols-4 sm:grid-cols-2 gap-8">
         {/* Logo & Mission */}
         <div>
-          <h2 className="text-2xl font-bold mb-4">Shammah Gospel Church</h2>
+          <h2 className="text-2xl font-bold mb-4">Jesus Christ Companion Ministry</h2>
           <p className="text-sm leading-relaxed">
             A Christ-centered church committed to spreading the gospel, building
             faith, and serving the community with love and purpose.
