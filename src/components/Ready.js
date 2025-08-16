@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Ready() {
   return (
-    <div className='relative p-5 bg-blue-600'>
+    <div className='relative p-3 md:p-5 bg-white'>
         <div className='relative'>
             {/* Call to Action */}
                     <motion.div
@@ -18,7 +18,7 @@ export default function Ready() {
                       <h2 className="text-center text-2xl md:text-5xl font-extrabold tracking-tight mb-4">
             Ready to accept Jesus today?
           </h2>
-                      <p className="mt-4 text-lg italic">Forget the past life and start a new life at Shammah Gospel Church. We are ready to guide step by step!!!</p>
+                      <p className="mt-4 text-lg italic">Forget the past life and start a new life at Jesus Christ Companion Ministry. We are ready to guide step by step!!!</p>
                       <a
                         href="contacts"
                         className="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition"

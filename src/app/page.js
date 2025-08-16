@@ -20,6 +20,7 @@ import Videos from "@/components/Videos";
 import Projects from "@/components/Projects";
 import Feeding from "@/components/Feeding";
 import SwiperGrid from "@/components/SwiperGrid";
+import ImageSlider from "@/components/ImageSlider";
 
 export default function Home() {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
       </section>
 
       {/* Blog */}
-      <section className="bg-gray-200">
+      <section className="bg-blue-100">
         <Ministry />
       </section>
 
@@ -72,6 +73,7 @@ export default function Home() {
 
       {/* Visit Us */}
       <section className="">
+        <SwiperGrid />
         <VisitUs />
       </section>
 

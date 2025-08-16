@@ -25,9 +25,9 @@ const services = [
 
 export default function Ministry() {
   return (
-    <section className="container mx-auto px-4 py-16 bg-gray-200">
+    <section className="container mx-auto px-4 py-16 bg-blue-100">
       <motion.h2
-          className="text-2xl md:text-4xl font-extrabold text-blue-600 text-center mb-10"
+          className="text-2xl md:text-4xl font-normal text-blue-700 text-left mb-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

@@ -9,42 +9,22 @@ import Link from "next/link";
 const imageGroups = [
   [
     {
-      img: "/images/pexels-pixabay-268533.jpg",
+      img: "/images/1754934102013.jpg",
       title: "Sunday Worship",
       caption: "Spirit-filled worship and praise every Sunday.",
       link: "/blog/sunday-worship",
     },
     {
-      img: "/images/pexels-pixabay-268533.jpg",
+      img: "/images/1754934116763.jpg",
       title: "Bible Study Tuesdays",
       caption: "Dig deeper into God's Word together.",
       link: "/blog/bible-study",
     },
     {
-      img: "/images/pexels-pixabay-268533.jpg",
+      img: "/images/1754934148006.jpg",
       title: "Youth Ministry",
       caption: "Empowering the next generation for Christ.",
       link: "/blog/youth-ministry",
-    },
-  ],
-  [
-    {
-      img: "/images/pexels-pixabay-268533.jpg",
-      title: "Choir Rehearsals",
-      caption: "Lifting hearts through gospel music.",
-      link: "/blog/choir-team",
-    },
-    {
-      img: "/images/pexels-pixabay-268533.jpg",
-      title: "Community Outreach",
-      caption: "Shammah in action—spreading love and hope.",
-      link: "/blog/community-outreach",
-    },
-    {
-      img: "/images/pexels-pixabay-268533.jpg",
-      title: "Women's Fellowship",
-      caption: "Building strong women of faith.",
-      link: "/blog/womens-fellowship",
     },
   ],
 ];
@@ -72,7 +52,7 @@ export default function SwiperGrid() {
                   <img
                     src={item.img}
                     alt={item.title}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 md:h-60 object-cover"
                   />
                   <div className="p-4">
                     <h3 className="text-lg font-semibold text-gray-800">{item.title}</h3>

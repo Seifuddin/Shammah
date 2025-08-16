@@ -25,13 +25,13 @@ export default function Sermon() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <motion.h2
-          className="text-2xl font-bold text-blue-800 text-center mb-10"
+          className="text-2xl md:text-4xl font-normal mb-4 text-red-600"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Latest Sermons
+          click to listen and download our Hot Sermons
         </motion.h2>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -63,10 +63,10 @@ export default function Sermon() {
           ))}
         </div>
 
-        <div className="text-center mt-10">
+        <div className="text-center bg-red-600 mt-10 rounded-3xl p-1">
           <a
             href="#"
-            className="inline-flex items-center gap-2 text-blue-700 font-medium hover:underline"
+            className="inline-flex items-center gap-2 text-white font-medium hover:underline"
           >
             <PlayCircle size={20} />
             View All Sermons

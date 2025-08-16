@@ -11,7 +11,7 @@ export default function TithesAndOffering() {
     <section className="bg-gradient-to-b from-blue-200 via-white to-orange-200 py-16 px-6 sm:px-10 lg:px-20 relative z-0">
       <div className="max-w-5xl mx-auto text-center">
         <motion.h2
-          className="text-2xl md:text-4xl font-extrabold text-blue-800 mb-4"
+          className="text-2xl md:text-4xl font-normal text-blue-700 mb-4"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -35,14 +35,14 @@ export default function TithesAndOffering() {
         >
           <button
             onClick={() => setShowGivingModal(true)}
-            className="bg-blue-600 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition"
+            className="bg-red-700 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition"
           >
             Give Online
           </button>
 
           <button
             onClick={() => setShowBankModal(true)}
-            className="bg-yellow-600 border text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition"
+            className="bg-red-600 border text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition"
           >
             View Bank Details
           </button>

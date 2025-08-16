@@ -13,16 +13,16 @@ export default function VisitUs() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl md:text-4xl font-extrabold text-blue-600 mb-4">Visit Us</h2>
+          <h2 className="text-2xl md:text-4xl font-normal text-blue-700 mb-4">Visit Us</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            We would love to welcome you to Shammah Gospel Church! Come join us
+            We would love to Jesus Christ Companion Ministry (JCM)! Come join us
             in worship, fellowship, and spiritual growth.
           </p>
 
           <div className="flex items-start gap-3 mb-3 text-gray-700 text-sm">
             <MapPin size={20} className="text-blue-700" />
             <span>
-              Shammah Gospel Church, Kiamutugu - Mwanianjau Road, Kiamutugu Town, Kirinyaga County
+              Jesus Christ Companion Ministry (JCM) Headquarters Ruiru, behind The Mark Hotel, along Thika Super Highway - Kihunguro area
             </span>
           </div>
 
@@ -38,7 +38,7 @@ export default function VisitUs() {
             href="https://maps.google.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-700 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-800 transition"
+            className="inline-block bg-red-700 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-800 transition"
           >
             Get Directions
           </a>

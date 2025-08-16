@@ -4,9 +4,10 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
-  '/images/IMG-20220321-WA0000.jpg',
-  '/images/0_X9GoivpFR0-w0b3_.jpg',
-  '/images/1000_F_382847586_DB04vLolKezvGHLKHbov6nLrMsTUsRmw.jpg',
+  '/images/GDPAtjUXEAAT9hI.jpg',
+  '/images/1754123364089b.jpg',
+  '/images/1754123353752b.jpg',
+  '/images/1754123368741b.jpg',
 ];
 
 export default function ImageSlider() {

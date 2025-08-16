@@ -5,10 +5,10 @@ import Image from "next/image";
 import { FaUsers, FaChild, FaHandsHelping } from "react-icons/fa";
 
 const images = [
-  "/images/1754933613059.jpg",
-  "/images/1754933638432.jpg",
-  "/images/1754933745674.jpg",
-  "/images/1754933636974.jpg",
+  "/images/1754933799788.jpg",
+  "/images/1754123630196.jpg",
+  "/images/1754933817706.jpg",
+  "/images/1754933796240.jpg",
 ];
 
 export default function Feeding() {
@@ -20,7 +20,7 @@ export default function Feeding() {
         {/* Left: Text Content */}
         <div>
           <motion.h2
-            className="text-2xl md:text-4xl font-extrabold mb-4 text-yellow-600"
+            className="text-2xl md:text-4xl font-normal mb-4 text-blue-600"
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
@@ -76,7 +76,7 @@ export default function Feeding() {
 
           <motion.button
             whileHover={{ scale: 1.05 }}
-            className="mt-8 bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-yellow-700"
+            className="mt-8 w-full bg-red-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-yellow-700"
           >
             Donate to Feed a Child
           </motion.button>
@@ -88,8 +88,8 @@ export default function Feeding() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-2xl font-semibold text-yellow-700 mb-4">
-            Project plan and overview
+          <h3 className="text-2xl font-normal text-blue-700 mb-4">
+            Our Feeding Team in Action
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
             {images.map((src, index) => (

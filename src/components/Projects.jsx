@@ -22,19 +22,15 @@ export default function Projects() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-2xl md:text-4xl font-extrabold text-yellow-600 mb-4">
+          <h2 className="text-2xl md:text-4xl font-normal text-blue-700 mb-4">
             Raha premium Kavagara Project
           </h2>
           <p className="text-lg text-gray-600 mb-6">
             Raha premium is a project meant to give food stuff to the less fortunate in the community.
             It takes place every sunday and it is sponsored by....
             Raha premium is a project meant to give food stuff to the less fortunate in the community.
-            It takes place every sunday and it is sponsored by....
-            Raha premium is a project meant to give food stuff to the less fortunate in the community.
           </p>
-          <h3 className="text-2xl font-semibold text-yellow-700 mb-4">
-            Our current church
-          </h3>
+          
           
           
                   {/* Right:  Image */}
@@ -57,8 +53,8 @@ export default function Projects() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-2xl font-semibold text-yellow-700 mb-4">
-            Project plan and overview
+          <h3 className="text-2xl font-normal text-blue-700 mb-4">
+            Our Team Distributing Raha Premium Maize Meal to the Needy
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
             {images.map((src, index) => (
@@ -101,9 +97,9 @@ export default function Projects() {
                   </motion.div>
                   <motion.button
                       whileHover={{ scale: 1.05 }}
-                      className="w-full mt-8 bg-yellow-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-yellow-700"
+                      className="w-full mt-8 bg-red-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-yellow-700"
                     >
-                      Donate to Feed a Child
+                      Support Us
                     </motion.button>
         </motion.div>
       </div>

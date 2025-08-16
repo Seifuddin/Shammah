@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <section
       className="relative bg-cover bg-center h-[90vh] flex items-center text-white"
-      style={{ backgroundImage: "url('/images/1754123377568.jpg')" }}
+      style={{ backgroundImage: "url('/images/edward-cisneros-KoKAXLKJwhk-unsplash-scaled.jpg')" }}
     >
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/50 z-0" />
@@ -25,9 +25,9 @@ export default function HeroSection() {
             With Pastor Ben (Kiengei)
           </h1>
           <h1 className="text-5xl text-white md:text-7xl font-extrabold leading-tight mb-4">
-            Jesus Christ Companion Ministry
+            Experience God's Love With Us
           </h1>
-          <p className="text-lg md:text-xl font font-semibold text-gray-200 mb-6 max-w-xl">
+          <p className="text-lg md:text-xl font font-normal text-gray-200 mb-6 max-w-xl">
             Welcome to Jesus Christ Companion Ministry (JCM). A place of worship, love, and spiritual growth. Join us every Sunday
             for a powerful encounter with God.
           </p>

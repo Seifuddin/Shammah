@@ -22,8 +22,8 @@ export default function PraiseWorshipTeam() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-2xl md:text-4xl font-extrabold text-yellow-600 mb-4">
-            Free Medical Camp
+          <h2 className="text-2xl md:text-4xl font-normal text-blue-700 mb-4">
+            Visit our free medical camp at JCM Headquarters
           </h2>
           <p className="text-lg text-gray-600 mb-6">
             Our Free Medical Camp is completely free and free to the public...
@@ -49,8 +49,8 @@ export default function PraiseWorshipTeam() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-2xl font-semibold text-yellow-800 mb-4">
-            Oue medical team in Action
+          <h3 className="text-2xl font-normal text-blue-700 mb-4">
+            Our medical team in Action
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
             {images.map((src, index) => (
@@ -69,6 +69,12 @@ export default function PraiseWorshipTeam() {
               </div>
             ))}
           </div>
+          <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    className="mt-8 border-2 w-full bg-red-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-blue-700"
+                  >
+                    Support Us
+                  </motion.button>
         </motion.div>
       </div>
 
