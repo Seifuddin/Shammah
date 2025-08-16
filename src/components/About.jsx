@@ -1,57 +1,60 @@
 "use client";
 
-export default function AboutUs() {
+import { motion } from "framer-motion";
+
+export default function AboutUsTimeline() {
+  const events = [
+    {
+      year: "1995",
+      title: "Church Founded",
+      description:
+        "Our journey began as a small fellowship with a handful of faithful believers gathered in prayer and worship.",
+    },
+    {
+      year: "2005",
+      title: "Season of Growth",
+      description:
+        "The congregation grew, and by God’s grace we were able to build a permanent sanctuary to serve the community.",
+    },
+    {
+      year: "2015",
+      title: "Community Outreach",
+      description:
+        "We expanded our ministry to serve the needy, starting programs for orphans, widows, and the less privileged.",
+    },
+    {
+      year: "2023",
+      title: "Today",
+      description:
+        "We continue to grow in faith and love, committed to spreading the Gospel and making disciples of all nations.",
+    },
+  ];
+
   return (
-    <section
-      className="relative bg-cover bg-center bg--50 bg-no-repeat py-6 text-gray-800">
-      {/* style={{
-        backgroundImage: `url('/images/pexels-pixabay-268533.jpg')`,
-      }}
-        */}
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-white/60 via-white/60 to-white/60 z-0 opacity-4"></div>
-
-      {/* Content */}
-      <div className="relative z-10">
-        {/* Intro */}
-        <div className="text-center py-6 px-4 max-w-6xl mx-auto">
-                  <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-500 mb-5">
-                    Welcome to Shammah <span className="text-orange-500"></span>
-                  </h1>
-                  <p className="italic mt-4 text-lg font-semibold text-blue-900">
-                    Join us every Sunday at 10 AM for worship and fellowship.
-                  </p>
+    <section className="py-12 bg-gray-50">
+      <div className="max-w-5xl mx-auto px-6">
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+          Our Journey
+        </h2>
+        <div className="relative border-l-4 border-blue-600">
+          {events.map((event, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              className="mb-10 ml-6"
+            >
+              <div className="absolute w-4 h-4 bg-blue-600 rounded-full -left-2.5 mt-2"></div>
+              <h3 className="text-xl font-semibold text-gray-900">
+                {event.year} – {event.title}
+              </h3>
+              <p className="text-gray-700 mt-2">{event.description}</p>
+            </motion.div>
+          ))}
         </div>
-        
-        {/* Image + Who We Are */}
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 px-6 pt-3 pb-16 items-center">
-          <img
-            src="/images/pexels-pixabay-268533.jpg"
-            alt="Team Collaboration"
-            className="w-full rounded-md shadow-lg object-cover"
-          />
-          <div>
-            <h1 className="font-bold mb-4 text-blue-500">Events</h1>
-        <p className="text-blue-900 italic">Join us at our upcoming church events and gatherings.</p>
-            <h2 className="text-blue-500 mb-4 font-semibold mt-5">Church Events</h2>
-      <ul className="list-disc pl-6 text-blue-900">
-        <li>Sunday Worship - Every Sunday at 10 AM</li>
-        <li>Youth Fellowship - Fridays at 6 PM</li>
-        <li>Community Outreach - First Saturday of the Month</li>
-      </ul>
-
-      <h2 className="text-blue-500 mb-4 font-semibold mt-5">Other Events</h2>
-      <ul className="list-disc pl-6 text-blue-900">
-        <li>Door to Door Service - Every Wednesday at 2 PM</li>
-        <li>Morning Devotions - Everyday at 6 AM to 7 AM</li>
-      </ul>
-          </div>
-        </div>
-
-        {/* Core Principles <CorePrinciples /> (Mission, Vision, Motto) */}
-        
       </div>
     </section>
   );
 }
-
