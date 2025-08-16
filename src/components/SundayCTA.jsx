@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function SundayCTA() {
   return (
-    <section className="relative bg-white text-blue-700 py-20 px-6 md:px-12 text-center overflow-hidden rounded-2xl shadow-2xl">
+    <section className="relative bg-white text-blue-700 py-20 px-6 md:px-12 text-center overflow-hidden shadow-2xl">
       {/* Background Overlay */}
       <div className="absolute inset-0"></div>
 
@@ -49,7 +49,7 @@ export default function SundayCTA() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-transparent border-2 border-red-700 text-blue-700 font-semibold px-8 py-3 rounded-full hover:bg-blue-700  transition"
+              className="bg-transparent border-2 border-red-700 text-blue-700 font-semibold px-8 py-3 rounded-full hover:bg-blue-700 hover:text-white  transition"
             >
               Watch Online
             </motion.button>
