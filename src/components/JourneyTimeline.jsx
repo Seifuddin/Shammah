@@ -42,7 +42,7 @@ export default function JourneyTimeline() {
               viewport={{ once: true }}
               className="mb-10 ml-6"
             >
-              <span className="absolute -left-4 flex items-center justify-center w-8 h-8 bg-indigo-500 text-white rounded-full shadow-lg">
+              <span className="absolute -left-4 flex items-center justify-center w-8 h-8 bg-indigo-500 text-black rounded-full shadow-lg">
                 <Calendar className="w-4 h-4" />
               </span>
               <h3 className="text-xl font-semibold">{item.year} — {item.title}</h3>

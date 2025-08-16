@@ -10,28 +10,39 @@ const imageGroups = [
   [
     {
       img: "/images/1754934102013.jpg",
-      title: "Sunday Worship",
-      caption: "Spirit-filled worship and praise every Sunday.",
-      link: "/blog/sunday-worship",
+      title: "A Gift of Mobility",
+      caption: "Pastor blessing members with motorbikes for daily life and ministry.",
+      link: "/blog/gift-of-mobility",
     },
     {
       img: "/images/1754934116763.jpg",
-      title: "Bible Study Tuesdays",
-      caption: "Dig deeper into God's Word together.",
-      link: "/blog/bible-study",
+      title: "Empowering Lives",
+      caption: "Each motorbike empowers families and strengthens the church community.",
+      link: "/blog/empowering-lives",
     },
     {
       img: "/images/1754934148006.jpg",
-      title: "Youth Ministry",
-      caption: "Empowering the next generation for Christ.",
-      link: "/blog/youth-ministry",
+      title: "Blessings on Wheels",
+      caption: "A testimony of generosity bringing joy and hope to many.",
+      link: "/blog/blessings-on-wheels",
     },
   ],
 ];
 
+
 export default function SwiperGrid() {
   return (
-    <div className="space-y-8 px-4">
+    <div className="space-y-12 mx-auto bg-gray-50 py-16 px-4">
+      {/* Title + Subtitle */}
+      <div className="text-center max-w-2xl mx-auto ">
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-3">
+          Blessings on Wheels
+        </h2>
+        <p className="text-lg text-gray-600">
+          A journey of generosity — gifting motorbikes to empower lives and ministry.
+        </p>
+      </div>
+
       {imageGroups.map((group, index) => (
         <Swiper
           key={index}
@@ -43,7 +54,7 @@ export default function SwiperGrid() {
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-          className="rounded-lg"
+          className="rounded-lg container"
         >
           {group.map((item, i) => (
             <SwiperSlide key={i}>
@@ -55,7 +66,9 @@ export default function SwiperGrid() {
                     className="w-full h-48 md:h-60 object-cover"
                   />
                   <div className="p-4">
-                    <h3 className="text-lg font-semibold text-gray-800">{item.title}</h3>
+                    <h3 className="text-lg font-semibold text-gray-800">
+                      {item.title}
+                    </h3>
                     <p className="text-sm text-gray-600 mt-1">{item.caption}</p>
                   </div>
                 </div>

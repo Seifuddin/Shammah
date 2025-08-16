@@ -9,29 +9,28 @@ import AboutUsTimeline from "./About";
 
 export default function Aboutus() {
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
+    <section className="py-20 bg-gray-100 relative overflow-hidden">
       {/* Decorative Background Shape */}
       <div className="absolute top-0 left-0 w-40 h-40 bg-blue-200 rounded-full blur-3xl opacity-40 -z-10" />
       <div className="absolute bottom-0 right-0 w-56 h-56 bg-red-200 rounded-full blur-3xl opacity-40 -z-10" />
 
       {/* Heading */}
       <motion.h2
-        className="text-3xl md:text-5xl font-extrabold mb-4 text-center text-blue-800"
+        className="text-3xl md:text-5xl font-extrabold text-center text-blue-800"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        About Us
+      
       </motion.h2>
       <motion.h4
-        className="text-center text-lg md:text-xl font-medium text-gray-600 mb-14"
+        className="text-center text-lg md:text-xl font-medium text-gray-600 mb-"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.6 }}
         viewport={{ once: true }}
       >
-        A place to belong, believe, and become
       </motion.h4>
 
       {/* Grid */}
@@ -73,10 +72,10 @@ export default function Aboutus() {
             Join us every Sunday at <span className="font-semibold text-blue-800">10 AM</span> for worship and fellowship.
           </p>
 
-          <h2 className="text-xl md:text-2xl font-semibold text-blue-700">
+          <h2 className="hidden md:fle text-xl md:text-2xl font-semibold text-blue-700">
             Our Mission
           </h2>
-          <p className="text-gray-700 leading-relaxed max-w-lg">
+          <p className= "hidden md:fle text-gray-700 leading-relaxed max-w-lg">
             To equip people spiritually and practically to live victorious lives
             through Christ. Whether you're new to church or seeking a spiritual
             home, you are welcome here.
@@ -99,7 +98,6 @@ export default function Aboutus() {
           </div>
         </motion.div>
       </div>
-      <JourneyTimeline />
     </section>
   );
 }

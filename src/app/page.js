@@ -21,6 +21,8 @@ import Projects from "@/components/Projects";
 import Feeding from "@/components/Feeding";
 import SwiperGrid from "@/components/SwiperGrid";
 import ImageSlider from "@/components/ImageSlider";
+import SundayCTA from "@/components/SundayCTA";
+import JourneyTimeline from "@/components/JourneyTimeline";
 
 export default function Home() {
   return (
@@ -28,6 +30,7 @@ export default function Home() {
       {/* Hero Section */}
       <section>
         <Heroo />
+        <SundayCTA />
       </section>
        {/* Events */}
       <section className="">
@@ -36,6 +39,7 @@ export default function Home() {
       {/* Blog */}
       <section className="">
         <Aboutus />
+        <JourneyTimeline />
         <Sermon />
       </section>
 
