@@ -40,11 +40,10 @@ export default function Home() {
       <section className="">
         <Aboutus />
         <JourneyTimeline />
-        <Sermon />
       </section>
 
       {/* Blog */}
-      <section className="bg-blue-100">
+      <section className="bg-blue-50">
         <Ministry />
       </section>
 
@@ -77,7 +76,6 @@ export default function Home() {
 
       {/* Visit Us */}
       <section className="">
-        <SwiperGrid />
         <VisitUs />
       </section>
 
@@ -85,7 +83,7 @@ export default function Home() {
 
       {/* About Us */}
       <section className="">
-        <LatestBlogSection />
+        <SwiperGrid />
       </section>
 
     </main>

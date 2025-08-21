@@ -24,7 +24,7 @@ export default function HeroSection() {
   }, [x, y]);
 
   return (
-    <section className="relative h-[80vh] flex items-center justify-center text-white overflow-hidden">
+    <section className="relative h-[90vh] py-16 flex items-center justify-center text-white overflow-hidden">
       {/* Background with parallax */}
       <motion.div
         className="absolute inset-0"
@@ -85,7 +85,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="space-y-6"
+          className="space-y-4"
         >
           <motion.h2
             initial={{ opacity: 0, y: -20 }}

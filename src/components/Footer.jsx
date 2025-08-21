@@ -56,8 +56,8 @@ export default function Footer() {
         {/* Contact & Socials */}
         <div>
           <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
-          <p className="text-sm mb-3">Email: info@shammahgospel.org</p>
-          <p className="text-sm mb-3">Phone: +254 722 222 003</p>
+          <p className="text-sm mb-3">Email: info@jccm.org</p>
+          <p className="text-sm mb-3">Phone: +254 700 000 000 000</p>
 
           <div className="flex space-x-4 mt-4">
             <a href="#" className="hover:text-blue-300">
@@ -78,7 +78,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-blue-700 mt-10 pt-4 text-center text-sm text-blue-200">
-        &copy; {new Date().getFullYear()} Shammah Gospel Church. All rights
+        &copy; {new Date().getFullYear()} Jesus Christ Companion Ministry (JCM). All rights
         reserved.
       </div>
     </footer>

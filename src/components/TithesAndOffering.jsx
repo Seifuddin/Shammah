@@ -8,10 +8,10 @@ export default function TithesAndOffering() {
   const [showBankModal, setShowBankModal] = useState(false);
 
   return (
-    <section className="bg-gradient-to-b from-blue-200 via-white to-orange-200 py-16 px-6 sm:px-10 lg:px-20 relative z-0">
+    <section className="bg-blue-50 py-16 px-6 sm:px-10 lg:px-20 relative z-0">
       <div className="max-w-5xl mx-auto text-center">
         <motion.h2
-          className="text-2xl md:text-4xl font-normal text-blue-700 mb-4"
+          className="text-3xl text-blue-900 font-bold text-center mb-4"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -22,7 +22,7 @@ export default function TithesAndOffering() {
           “Bring the whole tithe into the storehouse, that there may be food in my house.” — <strong>Malachi 3:10</strong>
         </p>
 
-        <p className="text-gray-700 text-md mb-8">
+        <p className="flex flex-row items-center justify-center gap-4">
           Your faithful giving helps spread the gospel, support church ministries, and serve our community.
           Thank you for partnering with us in the Kingdom work.
         </p>

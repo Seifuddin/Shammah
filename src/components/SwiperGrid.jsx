@@ -32,10 +32,10 @@ const imageGroups = [
 
 export default function SwiperGrid() {
   return (
-    <div className="space-y-12 mx-auto bg-gray-50 py-16 px-4">
+    <div className="space-y-12 mx-auto bg-white py-16 px-4">
       {/* Title + Subtitle */}
       <div className="text-center max-w-2xl mx-auto ">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-3">
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
           Blessings on Wheels
         </h2>
         <p className="text-lg text-gray-600">
@@ -66,7 +66,7 @@ export default function SwiperGrid() {
                     className="w-full h-48 md:h-60 object-cover"
                   />
                   <div className="p-4">
-                    <h3 className="text-lg font-semibold text-gray-800">
+                    <h3 className="text-lg font-semibold text-blue-900">
                       {item.title}
                     </h3>
                     <p className="text-sm text-gray-600 mt-1">{item.caption}</p>
