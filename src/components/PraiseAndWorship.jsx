@@ -1,7 +1,8 @@
 "use client";
-import { motion } from "framer-motion";
-import { useState } from "react";
+import { motion, animate, useMotionValue, useMotionValueEvent } from "framer-motion";
+import { useState, useEffect } from "react";
 import Image from "next/image";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
   "/images/1754933927764.jpg",
@@ -10,86 +11,212 @@ const images = [
   "/images/1754933954146.jpg",
 ];
 
+// ✅ Fixed Hook for counting animation
+function useCounterAnimation(from, to, duration = 2) {
+  const [count, setCount] = useState(from);
+  const motionValue = useMotionValue(from);
+
+  useEffect(() => {
+    const controls = animate(motionValue, to, {
+      duration,
+      ease: "easeOut",
+    });
+    return controls.stop; // cleanup animation on unmount
+  }, [to, duration, motionValue]);
+
+  useMotionValueEvent(motionValue, "change", (latest) => {
+    setCount(Math.floor(latest));
+  });
+
+  return count;
+}
+
 export default function PraiseWorshipTeam() {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const openImage = (src, index) => {
+    setSelectedImage(src);
+    setCurrentIndex(index);
+  };
+
+  const closeModal = () => setSelectedImage(null);
+
+  const showPrev = (e) => {
+    e.stopPropagation();
+    const newIndex = (currentIndex - 1 + images.length) % images.length;
+    setCurrentIndex(newIndex);
+    setSelectedImage(images[newIndex]);
+  };
+
+  const showNext = (e) => {
+    e.stopPropagation();
+    const newIndex = (currentIndex + 1) % images.length;
+    setCurrentIndex(newIndex);
+    setSelectedImage(images[newIndex]);
+  };
+
+  // ✅ Counters
+  const patients = useCounterAnimation(0, 500, 3);
+  const doctors = useCounterAnimation(0, 30, 3);
+  const volunteers = useCounterAnimation(0, 80, 3);
 
   return (
     <section className="w-full bg-white">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-16">
-        {/* Left Column – Text and Video */}
+        {/* Left Column – Text and Featured Image */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
+          className="flex flex-col"
         >
-          <h2 className="text-3xl text-blue-900 font-bold text-left mb-4">
-            Visit our free medical camp
+          <h2 className="text-3xl md:text-4xl text-red-700 font-bold text-left mb-6">
+            Visit Our Free Medical Camp
           </h2>
-          
-          <div className="rounded-lg max-h-60 md:max-h-96 overflow-hidden shado">
-                      {/* image */} <Image 
-                        src="/images/1754934067555.jpg"
-                        alt="Church worship"
-                        width={600}
-                        height={400}
-                        className="w-full  object-cover"
-                      />
-                      
-                      
-                    </div>
-                    <p className="text-lg text-gray-600 mt-6 mb-6">
-            Our Free Medical Camp is completely free and free to the public...
-            Our Free Medical Camp is completely free and free to the public...
-            Our Free Medical Camp is completely free and free to the public...
+
+          <div className="rounded-lg max-h-60 md:max-h-96 overflow-hidden shadow-lg">
+            <Image
+              src="/images/1754934067555.jpg"
+              alt="Medical Camp"
+              width={600}
+              height={400}
+              className="w-full object-cover"
+            />
+          </div>
+
+          <p className="text-lg text-gray-700 mt-6 leading-relaxed">
+            Our{" "}
+            <span className="font-semibold text-red-700">
+              Free Medical Camp
+            </span>{" "}
+            is open to the public, offering essential health services to the
+            community at no cost. It’s our way of spreading love, care, and
+            hope through medical support.
           </p>
         </motion.div>
 
-        {/* Right Column – Gallery */}
+        {/* Right Column – Gallery + CTA */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
+          className="flex flex-col"
         >
-          <h3 className="text-2xl font-normal text-blue-700 mb-7">
-            Our medical team in Action
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             {images.map((src, index) => (
               <div
                 key={index}
-                className="cursor-pointer group overflow-hidden rounded-xl shadow"
-                onClick={() => setSelectedImage(src)}
+                className="cursor-pointer group overflow-hidden rounded-xl shadow relative"
+                onClick={() => openImage(src, index)}
               >
                 <Image
                   src={src}
-                  alt={`Worship ${index + 1}`}
+                  alt={`Medical Camp ${index + 1}`}
                   width={400}
                   height={300}
-                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-56 md:h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-white font-semibold">View Image</p>
+                </div>
               </div>
             ))}
           </div>
-          <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    className="mt-8 border-2 w-full bg-red-600 text-white px-6 py-3 rounded-2xl font-semibold shadow-lg hover:bg-blue-700"
-                  >
-                    Support Us
-                  </motion.button>
+
+          {/* Call-to-Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              className="flex-1 bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:from-blue-700 hover:to-blue-800 transition"
+            >
+              Donate Now
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              className="flex-1 bg-gradient-to-r from-blue-950 to-blue-900 hover:from-blue-900 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-gray-300 transition"
+            >
+              Join as Volunteer
+            </motion.button>
+          </div>
         </motion.div>
+      </div>
+
+      {/* Stats Section with Animated Counters */}
+      <div className="bg-gradient-to-r from-blue-600 via-indigo-700 to-purple-700 py-12">
+        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <p className="text-4xl font-bold text-white">{patients}+</p>
+            <p className="text-gray-200 mt-2">Patients Served</p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <p className="text-4xl font-bold text-white">{doctors}+</p>
+            <p className="text-gray-200 mt-2">Doctors Participated</p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <p className="text-4xl font-bold text-white">{volunteers}+</p>
+            <p className="text-gray-200 mt-2">Volunteers Engaged</p>
+          </motion.div>
+        </div>
       </div>
 
       {/* Modal Image Viewer */}
       {selectedImage && (
         <div
-          className="fixed inset-0 z-50 bg-black bg-opacity-75 flex items-center justify-center p-4"
-          onClick={() => setSelectedImage(null)}
+          className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center p-4"
+          onClick={closeModal}
         >
-          <img
-            src={selectedImage}
-            alt="Enlarged"
-            className="max-h-[90vh] max-w-full rounded-xl shadow-lg"
-          />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3 }}
+            className="relative"
+          >
+            <img
+              src={selectedImage}
+              alt="Enlarged"
+              className="max-h-[90vh] max-w-full rounded-xl shadow-lg"
+            />
+
+            {/* Close Button */}
+            <button
+              className="absolute top-2 right-2 bg-white rounded-full p-2 shadow hover:bg-gray-100"
+              onClick={(e) => {
+                e.stopPropagation();
+                closeModal();
+              }}
+            >
+              <X className="w-6 h-6 text-gray-700" />
+            </button>
+
+            {/* Prev Button */}
+            <button
+              className="absolute top-1/2 left-2 -translate-y-1/2 bg-white rounded-full p-2 shadow hover:bg-gray-100"
+              onClick={showPrev}
+            >
+              <ChevronLeft className="w-6 h-6 text-gray-700" />
+            </button>
+
+            {/* Next Button */}
+            <button
+              className="absolute top-1/2 right-2 -translate-y-1/2 bg-white rounded-full p-2 shadow hover:bg-gray-100"
+              onClick={showNext}
+            >
+              <ChevronRight className="w-6 h-6 text-gray-700" />
+            </button>
+          </motion.div>
         </div>
       )}
     </section>

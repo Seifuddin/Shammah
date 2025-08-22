@@ -2,13 +2,13 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export default function HeroSection() {
+export default function Testimonies() {
   return (
     <section className="relative bg-gradient-to-r from-blue-600 via-indigo-700 to-purple-700 text-white overflow-hidden">
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 lg:px-16 pt-20 flex flex-col md:flex-row items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20 flex flex-col md:flex-row items-center">
         
         {/* Left Content */}
         <motion.div
@@ -19,7 +19,7 @@ export default function HeroSection() {
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
             Experience God's Love{" "}
-            <span className="text-red-600">With Us</span>
+            <span className="text-yellow-400">With Us</span>
           </h1>
 
           <p className="mt-6 text-lg md:text-xl text-gray-200">
@@ -31,13 +31,13 @@ export default function HeroSection() {
           <div className="mt-8 flex flex-col sm:flex-row sm:justify-center md:justify-start gap-4">
             <Link
               href="/services"
-              className="px-6 py-3 bg-red-600 text-gray-100 rounded-2xl shadow-md font-semibold hover:bg-yellow-500 transition"
+              className="px-6 py-3 bg-yellow-400 text-gray-900 rounded-2xl shadow-md font-semibold hover:bg-yellow-500 transition"
             >
               Watch Live
             </Link>
             <Link
               href="/contact"
-              className="px-6 py-3 border border-white text-gray-100 rounded-2xl hover:bg-yellow-400 hover:text-gray-900 transition"
+              className="px-6 py-3 border border-yellow-400 text-yellow-400 rounded-2xl hover:bg-yellow-400 hover:text-gray-900 transition"
             >
               Get in Touch
             </Link>

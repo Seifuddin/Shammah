@@ -17,7 +17,7 @@ export default function SundayCTA() {
         className="relative z-10 max-w-4xl mx-auto"
       >
         {/* Title */}
-        <h2 className="text-3xl text-blue-900 font-bold text-center mb-4 leading-tight">
+        <h2 className="text-3xl text-red-700 font-bold text-center mb-4 leading-tight">
           Join us this Sunday
         </h2>
 

@@ -23,13 +23,16 @@ import SwiperGrid from "@/components/SwiperGrid";
 import ImageSlider from "@/components/ImageSlider";
 import SundayCTA from "@/components/SundayCTA";
 import JourneyTimeline from "@/components/JourneyTimeline";
+import Testimonies from "@/components/Testimonials";
+import Testimonys from "@/components/Testmonies";
+import HeroSection from "@/components/Hero";
 
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
       {/* Hero Section */}
       <section>
-        <Heroo />
+        <HeroSection />
         <SundayCTA />
       </section>
        {/* Events */}
@@ -67,6 +70,7 @@ export default function Home() {
       {/* About Us */}
       <section className="">
         <PraiseAndWorship />
+        <Testimonys />
       </section>
 
       {/* Events */}
