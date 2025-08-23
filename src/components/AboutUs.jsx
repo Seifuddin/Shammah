@@ -52,7 +52,7 @@ function Counter({ from, to, duration = 2, label, Icon }) {
 
 export default function Aboutus() {
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-100 relative overflow-hidden">
+    <section className="py-20 bg-white relative overflow-hidden">
       {/* Background Accent */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />

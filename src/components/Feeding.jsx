@@ -149,7 +149,7 @@ export default function Feeding() {
           {/* CTA */}
           <motion.button
             whileHover={{ scale: 1.05 }}
-            className="mt-10 w-full bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:from-blue-700 hover:to-blue-800 transition"
+            className="mt-10 w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:from-blue-700 hover:to-blue-800 transition"
           >
             🍞 Donate to Feed a Child
           </motion.button>

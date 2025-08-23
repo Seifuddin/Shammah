@@ -26,6 +26,7 @@ import JourneyTimeline from "@/components/JourneyTimeline";
 import Testimonies from "@/components/Testimonials";
 import Testimonys from "@/components/Testmonies";
 import HeroSection from "@/components/Hero";
+import DonationCTA from "@/components/Donate";
 
 export default function Home() {
   return (
@@ -33,7 +34,6 @@ export default function Home() {
       {/* Hero Section */}
       <section>
         <HeroSection />
-        <SundayCTA />
       </section>
        {/* Events */}
       <section className="">
@@ -42,7 +42,8 @@ export default function Home() {
       {/* Blog */}
       <section className="">
         <Aboutus />
-        <JourneyTimeline />
+        <Ready />
+        <SundayCTA />
       </section>
 
       {/* Blog */}
@@ -58,7 +59,7 @@ export default function Home() {
       {/* Blog */}
       <section className="">
         <Feeding />
-        <Ready />
+        <DonationCTA />
         <Projects />
       </section>
 

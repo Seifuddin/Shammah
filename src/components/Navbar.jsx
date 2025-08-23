@@ -18,7 +18,7 @@ const resources = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(null);
+  const [openDropdown, setOpenDropdown] = useState(null);
   const pathname = usePathname();
 
   const navLinks = [
@@ -32,7 +32,7 @@ export default function Navbar() {
   ];
 
   const linkClasses = (href) =>
-    `font-medium ${
+    `block font-medium transition-colors ${
       pathname === href
         ? 'text-blue-700 underline underline-offset-4'
         : 'text-gray-700 hover:text-blue-700'
@@ -40,7 +40,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto flex justify-between items-center px-4 py-6">
+      <div className="container mx-auto flex justify-between items-center px-4 py-4">
         <h1 className="text-xl md:text-2xl font-bold text-blue-700">JCM</h1>
 
         {/* Desktop menu */}
@@ -50,19 +50,19 @@ export default function Navbar() {
               <li
                 key={i}
                 className="relative group"
-                onMouseEnter={() => setDropdownOpen(item.label)}
-                onMouseLeave={() => setDropdownOpen(null)}
+                onMouseEnter={() => setOpenDropdown(item.label)}
+                onMouseLeave={() => setOpenDropdown(null)}
               >
                 <button className="flex items-center gap-1 text-gray-700 hover:text-blue-700 font-medium">
                   {item.label} <ChevronDown size={16} />
                 </button>
-                {dropdownOpen === item.label && (
+                {openDropdown === item.label && (
                   <ul className="absolute left-0 mt-2 bg-white shadow-lg rounded-md w-48 py-2 z-50">
                     {item.dropdown.map((subItem) => (
                       <li key={subItem.href}>
                         <Link
                           href={subItem.href}
-                          className={linkClasses(subItem.href) + ' block px-4 py-2 text-sm hover:bg-blue-100'}
+                          className={linkClasses(subItem.href) + ' px-4 py-2 text-sm hover:bg-blue-50'}
                         >
                           {subItem.label}
                         </Link>
@@ -91,26 +91,52 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
-      {isOpen && (
-        <div className="md:hidden  bg-white px-6 pb-4 shadow-md space-y-3">
+      {/* Mobile menu overlay */}
+      <div
+        className={`fixed inset-0 bg-black bg-opacity-40 transition-opacity duration-300 ${
+          isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        }`}
+        onClick={() => setIsOpen(false)}
+      />
+
+      {/* Mobile slide-in panel */}
+      <div
+        className={`fixed top-0 right-0 h-full w-72 bg-white shadow-lg transform transition-transform duration-300 ${
+          isOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="flex justify-between items-center px-6 py-4 border-b">
+          <h2 className="text-lg font-bold text-blue-700">Menu</h2>
+          <button onClick={() => setIsOpen(false)} aria-label="Close Menu">
+            <X size={24} className="text-gray-700" />
+          </button>
+        </div>
+
+        <div className="px-6 py-6 space-y-4">
           {navLinks.map((item, i) =>
             item.dropdown ? (
-              <div key={i}>
-                <details className="group">
-                  <summary className="flex justify-between items-center cursor-pointer text-gray-700 font-medium py-2">
-                    {item.label}
-                    <ChevronDown
-                      className="transition-transform group-open:rotate-180"
-                      size={16}
-                    />
-                  </summary>
-                  <ul className="pl-4 pt-1 space-y-1">
+              <div key={i} className="border-b pb-2">
+                <button
+                  className="flex justify-between items-center w-full text-left text-gray-700 font-medium"
+                  onClick={() =>
+                    setOpenDropdown(openDropdown === item.label ? null : item.label)
+                  }
+                >
+                  {item.label}
+                  <ChevronDown
+                    size={18}
+                    className={`transform transition-transform ${
+                      openDropdown === item.label ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+                {openDropdown === item.label && (
+                  <ul className="mt-2 pl-3 space-y-2">
                     {item.dropdown.map((subItem) => (
                       <li key={subItem.href}>
                         <Link
                           href={subItem.href}
-                          className={linkClasses(subItem.href)}
+                          className="block text-gray-600 hover:text-blue-700"
                           onClick={() => setIsOpen(false)}
                         >
                           {subItem.label}
@@ -118,13 +144,13 @@ export default function Navbar() {
                       </li>
                     ))}
                   </ul>
-                </details>
+                )}
               </div>
             ) : (
               <Link
                 key={i}
                 href={item.href}
-                className={linkClasses(item.href)}
+                className="block text-gray-700 font-medium hover:text-blue-700"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
@@ -132,7 +158,7 @@ export default function Navbar() {
             )
           )}
         </div>
-      )}
+      </div>
     </nav>
   );
 }
