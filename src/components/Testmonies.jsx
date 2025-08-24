@@ -1,8 +1,14 @@
 "use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { motion } from "framer-motion";
-import { useState } from "react";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const testimonials = [
   {
@@ -10,36 +16,65 @@ const testimonials = [
     role: "Volunteer",
     message:
       "Being part of this feeding mission has changed my life. Seeing children smile after a meal fills my heart with joy.",
-    image: "/images/1754123368741b.jpg",
+    image: "/images/1754123368741.jpg",
   },
   {
     name: "John Kamau",
     role: "Orphanage Director",
     message:
       "This ministry has been a lifeline for us. With their support, we can focus on raising and educating the children.",
-    image: "/images/1754123377568.jpg",
+    image: "/images/1754123368741.jpg",
   },
   {
     name: "Muriithi Nguru",
     role: "Donor",
     message:
       "I am grateful to contribute to this cause. It’s amazing to see the direct impact of my giving on children’s lives.",
-    image: "/images/IMG_20221028_140830_410.jpg",
+    image: "/images/1754123368741.jpg",
+  },
+  {
+    name: "Grace Wanjiru",
+    role: "Community Member",
+    message:
+      "The love and care I’ve experienced through this ministry have transformed my family’s life.",
+    image: "/images/1754123368741.jpg",
+  },
+  {
+    name: "Peter Otieno",
+    role: "Pastor",
+    message:
+      "This is more than just a mission — it’s God’s love in action. I’m humbled to witness lives changing.",
+    image: "/images/1754123368741.jpg",
+  },
+  {
+    name: "Lucy Njeri",
+    role: "Teacher",
+    message:
+      "The support given to the children not only feeds them but gives them hope and motivation to learn and dream big.",
+    image: "/images/1754123368741.jpg",
+  },
+  {
+    name: "Samuel Karanja",
+    role: "Youth Leader",
+    message:
+      "Partnering with this ministry has been inspiring. The transformation in young people’s lives is truly remarkable.",
+    image: "/images/1754123368741.jpg",
+  },
+  {
+    name: "Mary Atieno",
+    role: "Beneficiary",
+    message:
+      "I never imagined my children would have such an opportunity. This ministry has given us dignity and a future.",
+    image: "/images/1754123368741.jpg",
   },
 ];
 
 export default function Testimonys() {
-  const [current, setCurrent] = useState(0);
-
-  const prev = () =>
-    setCurrent((current - 1 + testimonials.length) % testimonials.length);
-  const next = () => setCurrent((current + 1) % testimonials.length);
-
   return (
-    <section className="w-full bg-gray-50 py-16">
+    <section className="w-full bg-gradient-to-b from-gray-50 to-white py-20">
       <div className="container mx-auto px-4 text-center">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-red-700 mb-10"
+          className="text-3xl md:text-4xl font-bold text-red-700 mb-14"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -47,49 +82,47 @@ export default function Testimonys() {
           ❤️ What People Say About Us
         </motion.h2>
 
-        <div className="relative max-w-3xl mx-auto">
-          <motion.div
-            key={current}
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.6 }}
-            className="bg-white p-8 rounded-2xl shadow-xl"
-          >
-            <div className="flex flex-col items-center">
-              <Image
-                src={testimonials[current].image}
-                alt={testimonials[current].name}
-                width={80}
-                height={80}
-                className="rounded-full border-4 border-red-600 mb-4"
-              />
-              <p className="text-gray-700 italic mb-4">
-                “{testimonials[current].message}”
-              </p>
-              <h3 className="font-semibold text-lg text-blue-900">
-                {testimonials[current].name}
-              </h3>
-              <span className="text-sm text-gray-500">
-                {testimonials[current].role}
-              </span>
-            </div>
-          </motion.div>
-
-          {/* Controls */}
-          <button
-            onClick={prev}
-            className="absolute top-1/2 -left-6 transform -translate-y-1/2 bg-white rounded-full p-2 shadow hover:bg-gray-100"
-          >
-            <ChevronLeft className="w-6 h-6 text-gray-700" />
-          </button>
-          <button
-            onClick={next}
-            className="absolute top-1/2 -right-6 transform -translate-y-1/2 bg-white rounded-full p-2 shadow hover:bg-gray-100"
-          >
-            <ChevronRight className="w-6 h-6 text-gray-700" />
-          </button>
-        </div>
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={30}
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 6000, disableOnInteraction: false }}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+          className="pb-12"
+        >
+          {testimonials.map((t, idx) => (
+            <SwiperSlide key={idx}>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="bg-white px-8 py-10 rounded-3xl shadow-2xl border border-gray-100 h-full flex flex-col items-center"
+              >
+                <Image
+                  src={t.image}
+                  alt={t.name}
+                  width={90}
+                  height={90}
+                  className="rounded-full border-4 border-red-600 mb-5 object-cover"
+                />
+                <p className="text-gray-700 text-lg italic mb-6 leading-relaxed">
+                  “{t.message}”
+                </p>
+                <h3 className="font-semibold text-xl text-blue-900">
+                  {t.name}
+                </h3>
+                <span className="text-sm text-gray-500 tracking-wide uppercase">
+                  {t.role}
+                </span>
+              </motion.div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );

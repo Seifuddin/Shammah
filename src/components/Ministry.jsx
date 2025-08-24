@@ -25,7 +25,7 @@ const services = [
 
 export default function Ministry() {
   return (
-    <section className="container mx-auto px-4 py-16 bg-blue-50">
+    <section className="container mx-auto px-4 py-16 bg-white">
       <motion.h2
           className="text-3xl text-red-700 font-bold text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,7 @@ export default function Ministry() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          JCM to the community
+          Our Projects
         </motion.h2>
       {/* Desktop Layout */}
       <div className="hidden md:grid grid-cols-2 gap-6">

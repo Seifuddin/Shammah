@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import SermonPlayer from "@/components/SermonPlayer";
+import Image from "next/image";
 import Link from "next/link";
 import { Users, BookOpen, HeartHandshake, Church } from "lucide-react"; // ✅ Icons
 
@@ -52,13 +53,13 @@ function Counter({ from, to, duration = 2, label, Icon }) {
 
 export default function Aboutus() {
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
+    <section className="py-20 bg-blue-100 relative overflow-hidden">
       {/* Background Accent */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />
 
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        {/* Section Heading */}
+        {/* Section Heading 
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -73,7 +74,7 @@ export default function Aboutus() {
             Rooted in faith, hope, and love — growing together as one family in Christ.
           </p>
         </motion.div>
-
+*/}
         {/* Content Grid */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left: Media / Sermon Player */}
@@ -84,7 +85,13 @@ export default function Aboutus() {
             viewport={{ once: true }}
             className="rounded-2xl overflow-hidden shadow-xl bg-white"
           >
-            <SermonPlayer />
+            <Image
+                          src="/images/GDPAtjUXEAAT9hI.jpg"
+                          alt="About"
+                          width={600}
+                          height={400}
+                          className="w-full object-cover"
+                        />
           </motion.div>
 
           {/* Right: Text Content */}
@@ -94,21 +101,21 @@ export default function Aboutus() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-blue-900 mb-3">Who We Are</h3>
+            <h3 className="text-2xl font-bold text-blue-900 mb-3">About Us</h3>
             <p className="text-gray-700 leading-relaxed mb-6">
               We are passionate about sharing the love of Christ, teaching the
               Word of God with clarity, and building a strong community of
               believers. Our desire is to see lives transformed and hearts
               rooted in the Gospel.
             </p>
-
+{/* Right: Text Content
             <h3 className="text-2xl font-bold text-blue-900 mb-3">Our Mission</h3>
             <p className="text-gray-700 leading-relaxed mb-6">
               To equip people spiritually and practically to live victorious
               lives through Christ. Whether you're new to faith or looking for a
               spiritual home, you belong here.
             </p>
-
+ */}
             <p className="text-gray-700 italic mb-6">
               “Join us every Sunday at 10 AM for worship and fellowship.”
             </p>
@@ -117,13 +124,13 @@ export default function Aboutus() {
             <div className="flex flex-wrap gap-4 mt-6">
               <Link
                 href="/visit"
-                className="bg-red-700 text-white text-center py-3 px-6 rounded-xl font-semibold hover:bg-red-800 transition transform hover:scale-105 shadow-lg"
+                className="bg-red-700 text-white text-center py-2 px-6 rounded-full font-semibold hover:bg-red-800 transition transform hover:scale-105 shadow-lg"
               >
                 Learn More
               </Link>
               <Link
                 href="/live"
-                className="bg-blue-900 text-white text-center py-3 px-6 rounded-xl font-semibold hover:bg-blue-800 transition transform hover:scale-105 shadow-lg"
+                className="bg-blue-900 text-white text-center py-2 px-6 rounded-full font-semibold hover:bg-blue-800 transition transform hover:scale-105 shadow-lg"
               >
                 Watch Sermons
               </Link>

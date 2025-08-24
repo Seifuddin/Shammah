@@ -27,6 +27,9 @@ import Testimonies from "@/components/Testimonials";
 import Testimonys from "@/components/Testmonies";
 import HeroSection from "@/components/Hero";
 import DonationCTA from "@/components/Donate";
+import UpcomingEvents from "@/components/Upcoming";
+import PastEventsGallery from "@/components/PastEventsGallery";
+import ChurchTV from "@/components/ChurchTv";
 
 export default function Home() {
   return (
@@ -34,6 +37,7 @@ export default function Home() {
       {/* Hero Section */}
       <section>
         <HeroSection />
+        <UpcomingEvents />
       </section>
        {/* Events */}
       <section className="">
@@ -42,14 +46,12 @@ export default function Home() {
       {/* Blog */}
       <section className="">
         <Aboutus />
+        <Ministry />
         <Ready />
-        <SundayCTA />
       </section>
 
       {/* Blog */}
-      <section className="bg-blue-50">
-        <Ministry />
-      </section>
+      
 
       {/* Ministries 
       <section className="">
@@ -72,19 +74,13 @@ export default function Home() {
       <section className="">
         <PraiseAndWorship />
         <Testimonys />
+        <ChurchTV />
       </section>
 
       {/* Events */}
       <section className="">
         
       </section>
-
-      {/* Visit Us */}
-      <section className="">
-        <VisitUs />
-      </section>
-
-      
 
       {/* About Us */}
       <section className="">
