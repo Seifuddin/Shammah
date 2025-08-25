@@ -53,7 +53,7 @@ function Counter({ from, to, duration = 2, label, Icon }) {
 
 export default function Aboutus() {
   return (
-    <section className="py-20 bg-blue-100 relative overflow-hidden">
+    <section className="py-20 bg-gray-200 relative overflow-hidden">
       {/* Background Accent */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />
@@ -83,14 +83,14 @@ export default function Aboutus() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="rounded-2xl overflow-hidden shadow-xl bg-white"
+            className="rounded-md overflow-hidden shadow-xl bg-white"
           >
             <Image
                           src="/images/GDPAtjUXEAAT9hI.jpg"
                           alt="About"
                           width={600}
                           height={400}
-                          className="w-full object-cover"
+                          className="w-full h-auto max-h-72 md:max-h-80 object-cover rounded-xl shadow-lg"
                         />
           </motion.div>
 
@@ -124,21 +124,15 @@ export default function Aboutus() {
             <div className="flex flex-wrap gap-4 mt-6">
               <Link
                 href="/visit"
-                className="bg-red-700 text-white text-center py-2 px-6 rounded-full font-semibold hover:bg-red-800 transition transform hover:scale-105 shadow-lg"
+                className="bg-blue-900 text-white text-center py-3 px-6 rounded font-semibold hover:bg-red-800 transition transform hover:scale-105 shadow-lg"
               >
                 Learn More
-              </Link>
-              <Link
-                href="/live"
-                className="bg-blue-900 text-white text-center py-2 px-6 rounded-full font-semibold hover:bg-blue-800 transition transform hover:scale-105 shadow-lg"
-              >
-                Watch Sermons
               </Link>
             </div>
           </motion.div>
         </div>
 
-        {/* Animated Counters */}
+        {/* Animated Counters 
         <motion.div
           className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 text-center"
           initial={{ opacity: 0 }}
@@ -151,6 +145,7 @@ export default function Aboutus() {
           <Counter from={0} to={50} label="Outreach Programs" Icon={HeartHandshake} />
           <Counter from={0} to={20} label="Years in Ministry" Icon={Church} />
         </motion.div>
+        */}
       </div>
     </section>
   );

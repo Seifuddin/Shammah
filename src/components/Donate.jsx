@@ -29,7 +29,7 @@ export default function DonationCTA() {
           change lives. Every gift makes a difference.
         </p>
 
-        {/* Preset donation buttons */}
+        {/* Preset donation buttons 
         <div className="flex flex-wrap justify-center gap-3 mb-6">
           {presetAmounts.map((val) => (
             <button
@@ -45,8 +45,8 @@ export default function DonationCTA() {
             </button>
           ))}
         </div>
-
-        {/* Custom input */}
+        */}
+        {/* Custom input 
         <div className="flex justify-center items-center gap-3 mb-6">
           <span className="text-lg">KES</span>
           <input
@@ -54,10 +54,10 @@ export default function DonationCTA() {
             placeholder="Enter Amount"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
-            className="px-4 py-2 rounded-lg w-40 text-black focus:ring-2 focus:ring-white outline-none"
+            className="px-4 py-2 border border-white rounded-lg w-40 text-white focus:ring-2 focus:ring-white outline-none"
           />
         </div>
-
+        */}
         {/* Donate button */}
         <motion.button
           whileHover={{ scale: 1.05 }}

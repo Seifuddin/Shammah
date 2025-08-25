@@ -71,7 +71,7 @@ const testimonials = [
 
 export default function Testimonys() {
   return (
-    <section className="w-full bg-gradient-to-b from-gray-50 to-white py-20">
+    <section className="w-full bg-gray-100 py-20">
       <div className="container mx-auto px-4 text-center">
         <motion.h2
           className="text-3xl md:text-4xl font-bold text-red-700 mb-14"
@@ -101,14 +101,14 @@ export default function Testimonys() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="bg-white px-8 py-10 rounded-3xl shadow-2xl border border-gray-100 h-full flex flex-col items-center"
+                className="bg-white px-8 py-10 rounded-md shadow-lg border border-gray-100 h-full flex flex-col items-center"
               >
                 <Image
                   src={t.image}
                   alt={t.name}
                   width={90}
                   height={90}
-                  className="rounded-full border-4 border-red-600 mb-5 object-cover"
+                  className="rounded-full border-4 border-blue-600 mb-5 object-cover"
                 />
                 <p className="text-gray-700 text-lg italic mb-6 leading-relaxed">
                   “{t.message}”

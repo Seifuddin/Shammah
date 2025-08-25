@@ -27,7 +27,7 @@ export default function Ministry() {
   return (
     <section className="container mx-auto px-4 py-16 bg-white">
       <motion.h2
-          className="text-3xl text-red-700 font-bold text-center mb-12"
+          className="text-3xl text-blue-900 font-bold text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

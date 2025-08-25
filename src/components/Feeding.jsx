@@ -84,12 +84,12 @@ export default function Feeding() {
           </motion.h2>
           <p className="text-gray-700 mb-8 leading-relaxed text-lg">
             Help us reach out and feed{" "}
-            <span className="font-semibold text-blue-700">
+            <span className="font-semibold text-blue-900">
               street children and orphans
             </span>{" "}
             across the country. Your contribution brings hope and sustains
             lives. Join us in showing Christ&apos;s love through{" "}
-            <span className="italic text-red-600">action and compassion.</span>
+            <span className="italic text-blue-900">action and compassion.</span>
           </p>
 
           {/* Impact Counters */}
@@ -146,13 +146,14 @@ export default function Feeding() {
             </div>
           </div>
 
-          {/* CTA */}
+          {/* CTA 
           <motion.button
             whileHover={{ scale: 1.05 }}
-            className="mt-10 w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:from-blue-700 hover:to-blue-800 transition"
+            className="mt-10 w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-md font-semibold shadow-lg hover:from-blue-700 hover:to-blue-800 transition"
           >
             🍞 Donate to Feed a Child
           </motion.button>
+          */}
         </div>
 
         {/* Right: Gallery */}

@@ -62,7 +62,7 @@ export default function PraiseWorshipTeam() {
   const volunteers = useCounterAnimation(0, 80, 3);
 
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-gray-50">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-16">
         {/* Left Column – Text and Featured Image */}
         <motion.div
@@ -81,7 +81,7 @@ export default function PraiseWorshipTeam() {
               alt="Medical Camp"
               width={600}
               height={400}
-              className="w-full object-cover"
+              className="w-full h-auto max-h-72 object-cover rounded-xl shadow-lg"
             />
           </div>
 
@@ -115,7 +115,7 @@ export default function PraiseWorshipTeam() {
                   alt={`Medical Camp ${index + 1}`}
                   width={400}
                   height={300}
-                  className="w-full h-56 md:h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white font-semibold">View Image</p>

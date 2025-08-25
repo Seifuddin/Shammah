@@ -37,7 +37,7 @@ export default function Projects() {
   };
 
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-gray-50">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-16">
         {/* Left Column – Text and Featured Image */}
         <motion.div
@@ -58,7 +58,7 @@ export default function Projects() {
             <img
               src="/images/1754933620182.jpg"
               alt="Feeding Children"
-              className="w-full h-auto object-cover max-h-96 rounded-xl shadow-lg"
+              className="w-full h-auto max-h-72 object-cover rounded-xl shadow-lg"
             />
           </motion.div>
 
@@ -97,7 +97,7 @@ export default function Projects() {
                   alt={`Gallery ${index + 1}`}
                   width={400}
                   height={300}
-                  className="w-full h-56 md:h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white font-semibold">View Image</p>
@@ -106,7 +106,7 @@ export default function Projects() {
             ))}
           </div>
 
-          {/* Paragraph */}
+          {/* Paragraph 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -124,7 +124,7 @@ export default function Projects() {
               , our patients and elderly left with food packages to take home.
             </p>
           </motion.div>
-
+          */}
           {/* Call-to-Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <motion.button

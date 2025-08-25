@@ -46,8 +46,6 @@ export default function Home() {
       {/* Blog */}
       <section className="">
         <Aboutus />
-        <Ministry />
-        <Ready />
       </section>
 
       {/* Blog */}
@@ -67,7 +65,7 @@ export default function Home() {
 
       {/* Tithes */}
       <section className="">
-        <TithesAndOffering />
+        <Ready />
       </section>
 
       {/* About Us */}

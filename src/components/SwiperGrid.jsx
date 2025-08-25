@@ -5,6 +5,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const imageGroups = [
   [
@@ -32,7 +33,7 @@ const imageGroups = [
 
 export default function SwiperGrid() {
   return (
-    <div className="space-y-12 mx-auto bg-white py-16 px-4">
+    <div className="space-y-12 mx-auto bg-gray-100 py-16 px-4">
       {/* Title + Subtitle */}
       <div className="text-center max-w-2xl mx-auto ">
         <h2 className="text-3xl md:text-4xl font-bold text-red-700 mb-4">
@@ -59,7 +60,7 @@ export default function SwiperGrid() {
           {group.map((item, i) => (
             <SwiperSlide key={i}>
               <Link href={item.link}>
-                <div className="bg-white rounded-lg shadow hover:shadow-lg transition duration-300 overflow-hidden">
+                <div className="bg-white rounded-md shadow hover:shadow-lg transition duration-300 overflow-hidden">
                   <img
                     src={item.img}
                     alt={item.title}
@@ -70,6 +71,14 @@ export default function SwiperGrid() {
                       {item.title}
                     </h3>
                     <p className="text-sm text-gray-600 mt-1">{item.caption}</p>
+                    <div className="gap-4 mt-6">
+                                <Link
+                                  href="/visit"
+                                  className="bg-blue-900 text-white text-center py-1 px-6 rounded hover:bg-red-800 transition transform hover:scale-105 shadow-lg"
+                                >
+                                  Learn More
+                                </Link>
+                              </div>
                   </div>
                 </div>
               </Link>
