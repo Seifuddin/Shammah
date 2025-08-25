@@ -23,7 +23,7 @@ export default function ContactFm() {
   };
 
   return (
-    <section className="bg-gradient-to-r from-purple-100 via-indigo-100 to-blue-100 py-16 px-6">
+    <section className="bg-gray-50 py-16 px-6">
       <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
         
         {/* Left Info Section */}
@@ -31,9 +31,9 @@ export default function ContactFm() {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-white space-y-6"
+          className="text-black space-y-6"
         >
-          <h2 className="text-4xl font-bold">Contact Us</h2>
+          <h2 className="text-4xl text-blue-900 font-bold">Contact Us</h2>
           <p className="text-lg opacity-90">
             We'd love to hear from you! Whether you have a prayer request, a testimony, or just want to say hello,
             our doors and hearts are always open.
@@ -51,7 +51,7 @@ export default function ContactFm() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="bg-white rounded-2xl shadow-xl p-8 space-y-6"
+          className="bg-white rounded-md shadow-xl p-8 space-y-6"
         >
           <div>
             <label className="block text-gray-700 font-medium">Name</label>
