@@ -123,11 +123,12 @@ export default function Aboutus() {
             {/* Buttons */}
             <div className="flex flex-wrap gap-4 mt-6">
               <Link
-                href="/visit"
-                className="bg-blue-900 text-white text-center py-3 px-6 rounded font-semibold hover:bg-red-800 transition transform hover:scale-105 shadow-lg"
-              >
-                Learn More
-              </Link>
+  href="/visit"
+  className="bg-blue-900 text-white text-center py-1 px-6 rounded hover:bg-red-800 transition transform hover:scale-105 shadow-lg"
+>
+  Learn More
+</Link>
+
             </div>
           </motion.div>
         </div>

@@ -1,12 +1,12 @@
 // File: pages/sermons.jsx
-import ContactForm from '@/components/ContactForm';
+import ContactFm from '@/components/Contacts';
 import VisitUs from '@/components/Visit';
 
 export default function Contact() {
   return (
     <>
       <main className="relative">
-        <ContactForm />
+        <ContactFm />
         <VisitUs />
       </main>
     </>

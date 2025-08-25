@@ -73,7 +73,7 @@ export default function SwiperGrid() {
                     <p className="text-sm text-gray-600 mt-1">{item.caption}</p>
                     <div className="gap-4 mt-6">
                                 <Link
-                                  href="/visit"
+                                  a href="/visit"
                                   className="bg-blue-900 text-white text-center py-1 px-6 rounded hover:bg-red-800 transition transform hover:scale-105 shadow-lg"
                                 >
                                   Learn More
