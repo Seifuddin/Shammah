@@ -39,7 +39,7 @@ export default function Navbar() {
     }`;
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-white py-2 shadow-md sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center px-4 py-4">
         <h1 className="text-xl md:text-2xl font-bold text-red-700">JCM</h1>
 
