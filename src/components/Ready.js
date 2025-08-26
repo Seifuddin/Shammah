@@ -24,7 +24,7 @@ export default function Ready() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg md:text-xl mb-10 text-gray-200 max-w-2xl mx-auto"
         >
-          Connect with us today through a call, WhatsApp, or email. 
+          Connect with us today through a call, WhatsApp, or email.
           We’re here to pray, guide, and walk with you in faith.
         </motion.p>
 
@@ -36,7 +36,7 @@ export default function Ready() {
         >
           {/* Phone Call Button */}
           <a
-            href="tel:+254712345678"
+            href="tel:0111608331"
             className="flex items-center gap-2 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-2xl shadow-lg transition transform hover:scale-105"
           >
             <Phone className="w-5 h-5" />
@@ -45,7 +45,7 @@ export default function Ready() {
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/254712345678"
+            href="https://wa.me/+254111608331"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 px-6 py-3 rounded-2xl shadow-lg transition transform hover:scale-105"
@@ -56,7 +56,7 @@ export default function Ready() {
 
           {/* Email Button */}
           <a
-            href="mailto:info@yourchurch.org"
+            href="mailto:lapsatechnologies@gmail.com"
             className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-2xl shadow-lg transition transform hover:scale-105"
           >
             <Mail className="w-5 h-5" />

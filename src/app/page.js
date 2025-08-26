@@ -30,6 +30,7 @@ import DonationCTA from "@/components/Donate";
 import UpcomingEvents from "@/components/Upcoming";
 import PastEventsGallery from "@/components/PastEventsGallery";
 import ChurchTV from "@/components/ChurchTv";
+import Bikes from "@/components/Bikes";
 
 export default function Home() {
   return (
@@ -82,7 +83,7 @@ export default function Home() {
 
       {/* About Us */}
       <section className="">
-        <SwiperGrid />
+        <Bikes />
       </section>
 
     </main>

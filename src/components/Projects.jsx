@@ -125,21 +125,30 @@ export default function Projects() {
             </p>
           </motion.div>
           */}
+          
           {/* Call-to-Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              className="flex-1 bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:from-yellow-600 hover:to-yellow-700 transition"
-            >
-              Donate Now
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              className="flex-1 bg-gradient-to-r from-blue-950 to-blue-900 hover:from-blue-900 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-gray-300 transition"
-            >
-              Join as Volunteer
-            </motion.button>
-          </div>
+<div className="flex flex-col sm:flex-row gap-4 mt-8">
+  <motion.button
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="flex items-center justify-center gap-2 flex-1 bg-gradient-to-r from-red-600 to-red-700 
+               text-white px-6 py-3 rounded-full font-semibold shadow-lg 
+               hover:from-red-700 hover:to-red-800 hover:shadow-xl transition-all"
+  >
+    ❤️ Donate Now
+  </motion.button>
+
+  <motion.button
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="flex items-center justify-center gap-2 flex-1 bg-gradient-to-r from-blue-600 to-blue-700 
+               text-white px-6 py-3 rounded-full font-semibold shadow-lg 
+               hover:from-blue-700 hover:to-blue-800 hover:shadow-xl transition-all"
+  >
+    🙌 Join as Volunteer
+  </motion.button>
+</div>
+
         </motion.div>
       </div>
 

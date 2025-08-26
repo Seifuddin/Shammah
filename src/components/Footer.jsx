@@ -57,19 +57,19 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
           <p className="text-sm mb-3">Email: info@jccm.org</p>
-          <p className="text-sm mb-3">Phone: +254 700 000 000 000</p>
+          <p className="text-sm mb-3">Phone: +254 710 353 535</p>
 
           <div className="flex space-x-4 mt-4">
-            <a href="#" className="hover:text-blue-300">
+            <a href="https://www.facebook.com/p/JesusChrist-Compassion-Ministries-Intl-100090911132659/" className="hover:text-blue-300">
               <FaFacebookF />
             </a>
-            <a href="#" className="hover:text-blue-300">
+            <a href="https://www.instagram.com/bishopbenjcmchurch/" className="hover:text-blue-300">
               <FaInstagram />
             </a>
-            <a href="#" className="hover:text-blue-300">
+            <a href="https://www.youtube.com/playlist?list=PL1chNqcN1O0sZkETfETdC4EekGo6GsQcR" className="hover:text-blue-300">
               <FaYoutube />
             </a>
-            <a href="#" className="hover:text-blue-300">
+            <a href="https://x.com/kiengeimuthee?lang=en" className="hover:text-blue-300">
               <FaTwitter />
             </a>
           </div>

@@ -58,31 +58,31 @@ export default function SwiperGrid() {
           className="rounded-lg container"
         >
           {group.map((item, i) => (
-            <SwiperSlide key={i}>
-              <Link href={item.link}>
-                <div className="bg-white rounded-md shadow hover:shadow-lg transition duration-300 overflow-hidden">
-                  <img
-                    src={item.img}
-                    alt={item.title}
-                    className="w-full h-48 md:h-60 object-cover"
-                  />
-                  <div className="p-4">
-                    <h3 className="text-lg font-semibold text-blue-900">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm text-gray-600 mt-1">{item.caption}</p>
-                    <div className="gap-4 mt-6">
-                                <Link
-                                  href="/visit"
-                                  className="bg-blue-900 text-white text-center py-1 px-6 rounded hover:bg-red-800 transition transform hover:scale-105 shadow-lg"
-                                >
-                                  Learn More
-                                </Link>
-                              </div>
-                  </div>
-                </div>
-              </Link>
-            </SwiperSlide>
+<SwiperSlide key={i}>
+  <div className="bg-white rounded-md shadow hover:shadow-lg transition duration-300 overflow-hidden">
+    <Link href={item.link}>
+      <img
+        src={item.img}
+        alt={item.title}
+        className="w-full h-48 md:h-60 object-cover"
+      />
+      <h3 className="text-lg font-semibold text-blue-900 p-4">
+        {item.title}
+      </h3>
+    </Link>
+
+    <p className="text-sm text-gray-600 px-4">{item.caption}</p>
+
+    <div className="gap-4 mt-6 px-4 pb-4">
+      <Link
+        href="/visit"
+        className="bg-blue-900 text-white text-center py-1 px-6 rounded hover:bg-red-800 transition transform hover:scale-105 shadow-lg inline-block"
+      >
+        Learn More
+      </Link>
+    </div>
+  </div>
+</SwiperSlide>
           ))}
         </Swiper>
       ))}

@@ -2,7 +2,7 @@
 import { motion, animate, useMotionValue, useMotionValueEvent } from "framer-motion";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Users, Stethoscope, Handshake } from "lucide-react"; // ✅ Added icons
 
 const images = [
   "/images/1754933927764.jpg",
@@ -128,46 +128,73 @@ export default function PraiseWorshipTeam() {
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <motion.button
               whileHover={{ scale: 1.05 }}
-              className="flex-1 bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:from-blue-700 hover:to-blue-800 transition"
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center justify-center gap-2 flex-1 bg-gradient-to-r from-red-600 to-red-700 
+               text-white px-6 py-3 rounded-full font-semibold shadow-lg 
+               hover:from-red-700 hover:to-red-800 hover:shadow-xl transition-all"
             >
-              Donate Now
+              ❤️ Donate Now
             </motion.button>
+
             <motion.button
               whileHover={{ scale: 1.05 }}
-              className="flex-1 bg-gradient-to-r from-blue-950 to-blue-900 hover:from-blue-900 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-gray-300 transition"
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center justify-center gap-2 flex-1 bg-gradient-to-r from-blue-600 to-blue-700 
+               text-white px-6 py-3 rounded-full font-semibold shadow-lg 
+               hover:from-blue-700 hover:to-blue-800 hover:shadow-xl transition-all"
             >
-              Join as Volunteer
+              🙌 Join as Volunteer
             </motion.button>
           </div>
         </motion.div>
       </div>
 
-      {/* Stats Section with Animated Counters */}
-      <div className="bg-gradient-to-r from-blue-600 via-indigo-700 to-purple-700 py-12">
-        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      {/* ✅ Improved Stats Section with Lucide Icons */}
+      <div className="bg-gradient-to-r from-blue-600 via-indigo-700 to-purple-700 py-16">
+        <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Patients Served */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            className="flex flex-col items-center justify-center bg-white/10 backdrop-blur-md 
+                       rounded-2xl p-8 shadow-lg hover:scale-105 transition-transform"
           >
-            <p className="text-4xl font-bold text-white">{patients}+</p>
-            <p className="text-gray-200 mt-2">Patients Served</p>
+            <div className="w-14 h-14 flex items-center justify-center bg-white/20 rounded-full mb-4">
+              <Users className="w-7 h-7 text-white" />
+            </div>
+            <p className="text-4xl font-extrabold text-white">{patients}+</p>
+            <p className="text-gray-200 mt-2 font-medium">Patients Served</p>
           </motion.div>
+
+          {/* Doctors Participated */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="flex flex-col items-center justify-center bg-white/10 backdrop-blur-md 
+                       rounded-2xl p-8 shadow-lg hover:scale-105 transition-transform"
           >
-            <p className="text-4xl font-bold text-white">{doctors}+</p>
-            <p className="text-gray-200 mt-2">Doctors Participated</p>
+            <div className="w-14 h-14 flex items-center justify-center bg-white/20 rounded-full mb-4">
+              <Stethoscope className="w-7 h-7 text-white" />
+            </div>
+            <p className="text-4xl font-extrabold text-white">{doctors}+</p>
+            <p className="text-gray-200 mt-2 font-medium">Doctors Participated</p>
           </motion.div>
+
+          {/* Volunteers Engaged */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex flex-col items-center justify-center bg-white/10 backdrop-blur-md 
+                       rounded-2xl p-8 shadow-lg hover:scale-105 transition-transform"
           >
-            <p className="text-4xl font-bold text-white">{volunteers}+</p>
-            <p className="text-gray-200 mt-2">Volunteers Engaged</p>
+            <div className="w-14 h-14 flex items-center justify-center bg-white/20 rounded-full mb-4">
+              <Handshake className="w-7 h-7 text-white" />
+            </div>
+            <p className="text-4xl font-extrabold text-white">{volunteers}+</p>
+            <p className="text-gray-200 mt-2 font-medium">Volunteers Engaged</p>
           </motion.div>
         </div>
       </div>
