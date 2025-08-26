@@ -21,7 +21,7 @@ export default function Aboutus() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-5xl font-extrabold text-blue-900 mb-4">
-            About <span className="text-red-700">Us</span>
+            About Us<span className="text-red-700"></span>
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
             Rooted in faith, hope, and love — growing together as one family in

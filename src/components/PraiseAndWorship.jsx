@@ -71,7 +71,7 @@ export default function PraiseWorshipTeam() {
           transition={{ duration: 0.6 }}
           className="flex flex-col"
         >
-          <h2 className="text-3xl md:text-4xl text-red-700 font-bold text-left mb-6">
+          <h2 className="text-3xl md:text-4xl text-blue-900 font-bold text-left mb-6">
             Visit Our Free Medical Camp
           </h2>
 

@@ -74,7 +74,7 @@ export default function Testimonys() {
     <section className="w-full bg-gray-100 py-20">
       <div className="container mx-auto px-4 text-center">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-red-700 mb-14"
+          className="text-3xl md:text-4xl font-bold text-blue-900 mb-14"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -108,12 +108,12 @@ export default function Testimonys() {
                   alt={t.name}
                   width={90}
                   height={90}
-                  className="rounded-full border-4 border-blue-600 mb-5 object-cover"
+                  className="rounded-full border-2 border-red-700 mb-5 object-cover"
                 />
                 <p className="text-gray-700 text-lg italic mb-6 leading-relaxed">
                   “{t.message}”
                 </p>
-                <h3 className="font-semibold text-xl text-blue-900">
+                <h3 className="font-semibold text-xl text-red-700">
                   {t.name}
                 </h3>
                 <span className="text-sm text-gray-500 tracking-wide uppercase">
