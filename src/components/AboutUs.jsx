@@ -20,7 +20,7 @@ export default function Aboutus() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-5xl font-extrabold text-blue-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
             About Us<span className="text-red-700"></span>
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
@@ -58,7 +58,7 @@ export default function Aboutus() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="text-2xl md:text-3xl font-bold text-blue-900">
+            <h3 className="text-2xl md:text-2xl font-bold text-blue-900">
               Welcome to Our Church
             </h3>
             <p className="text-gray-700 leading-relaxed">

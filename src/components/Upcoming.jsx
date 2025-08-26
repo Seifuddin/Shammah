@@ -10,7 +10,7 @@ const events = [
     date: "August 31, 2025",
     time: "10:00 AM - 12:30 PM",
     location: "JCM Church, Ruiru",
-    description: "Join us for a powerful worship service filled with praise, prayer, and the Word of God.",
+    description: "Join us for a powerful sunday worship service filled with praise, prayer, and the Word of God.",
   },
   {
     id: 2,
@@ -60,15 +60,15 @@ export default function UpcomingEvents() {
               transition={{ delay: index * 0.2 }}
               className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300 flex flex-col"
             >
-              <div className="flex items-center gap-3 text-red-700 font-semibold">
+              <div className="flex items-center gap-3 text-blue-700 font-semibold">
                 <CalendarDays className="w-5 h-5" />
                 <span>{event.date}</span>
               </div>
               <h3 className="text-xl font-bold text-blue-900 mt-3">{event.title}</h3>
               <p className="text-gray-600 mt-2">{event.description}</p>
 
-              <div className="mt-4 flex items-center font-semibold text-red-700 text-sm gap-2">
-                <MapPin className="w-4 h-4 text-red-700" />
+              <div className="mt-4 flex items-center font-semibold text-blue-700 text-sm gap-2">
+                <MapPin className="w-4 h-4 text-blue-700 font-semibold" />
                 <span>{event.location}</span>
               </div>
               <p className="text-sm text-gray-500 mt-1">{event.time}</p>

@@ -38,9 +38,9 @@ export default function ContactFm() {
             We'd love to hear from you! Whether you have a prayer request, a testimony, or just want to say hello,
             our doors and hearts are always open.
           </p>
-          <div className="space-y-4">
-            <p className="flex items-center gap-3"><MapPin className="w-5 h-5" /> 123 Church Street, Nairobi, Kenya</p>
-            <p className="flex items-center gap-3"><Phone className="w-5 h-5" /> +254 712 345 678</p>
+          <div className="space-y-4 text-blue-900">
+            <p className="flex items-center gap-3"><MapPin className="w-5 h-5" /> JCM Church Ruiru Eastern Bypass, Ruiru, Kiambu, Kenya</p>
+            <p className="flex items-center gap-3"><Phone className="w-5 h-5" /> +254 710 353 535</p>
             <p className="flex items-center gap-3"><Mail className="w-5 h-5" /> contact@church.org</p>
           </div>
         </motion.div>
@@ -51,53 +51,53 @@ export default function ContactFm() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="bg-white rounded-md shadow-xl p-8 space-y-6"
+          className="bg-white rounded-md border border-blue-900 shadow-lg p-8 space-y-6"
         >
           <div>
-            <label className="block text-gray-700 font-medium">Name</label>
+            <label className="block text-blue-900 font-semibold">Name</label>
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-indigo-500"
+              className="w-full px-4 py-2 border border-blue-900 rounded-md focus:ring-2 focus:ring-indigo-500"
             />
           </div>
 
           <div>
-            <label className="block text-gray-700 font-medium">Email</label>
+            <label className="block text-blue-900 font-semibold">Email</label>
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-indigo-500"
+              className="w-full px-4 py-2 border border-blue-900 rounded-md focus:ring-2 focus:ring-indigo-500"
             />
           </div>
 
           <div>
-            <label className="block text-gray-700 font-medium">Subject</label>
+            <label className="block text-blue-900 font-semibold">Subject</label>
             <input
               type="text"
               name="subject"
               value={form.subject}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-indigo-500"
+              className="w-full px-4 py-2 border border-blue-900 rounded-md focus:ring-2 focus:ring-indigo-500"
             />
           </div>
 
           <div>
-            <label className="block text-gray-700 font-medium">Message</label>
+            <label className="block text-blue-900 font-semibold">Message</label>
             <textarea
               name="message"
               value={form.message}
               onChange={handleChange}
               required
               rows="5"
-              className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-indigo-500"
+              className="w-full px-4 py-2 border border-blue-900 rounded-md focus:ring-2 focus:ring-indigo-500"
             />
           </div>
 

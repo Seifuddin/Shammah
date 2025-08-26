@@ -113,7 +113,7 @@ export default function Testimonys() {
                 <p className="text-gray-700 text-lg italic mb-6 leading-relaxed">
                   “{t.message}”
                 </p>
-                <h3 className="font-semibold text-xl text-red-700">
+                <h3 className="font-semibold text-xl text-blue-900">
                   {t.name}
                 </h3>
                 <span className="text-sm text-gray-500 tracking-wide uppercase">

@@ -80,16 +80,16 @@ export default function Feeding() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
-            Support Our <span className="text-red-600">Feeding Mission</span>
+            Support Our Feeding Mission <span className="text-red-600"></span>
           </motion.h2>
           <p className="text-gray-700 mb-8 leading-relaxed text-lg">
             Help us reach out and feed{" "}
-            <span className="font-semibold text-blue-900">
+            <span className="font-semibold text-red-700">
               street children and orphans
             </span>{" "}
             across the country. Your contribution brings hope and sustains
             lives. Join us in showing Christ&apos;s love through{" "}
-            <span className="italic text-blue-900">action and compassion.</span>
+            <span className="italic text-blue-700">action and compassion.</span>
           </p>
 
           {/* Impact Counters */}
@@ -116,31 +116,31 @@ export default function Feeding() {
           {/* Progress Bars */}
           <div className="space-y-4">
             <div>
-              <div className="flex justify-between mb-1 text-sm font-medium text-red-800">
+              <div className="flex justify-between mb-1 text-sm font-medium text-blue-800">
                 <span>Monthly Feeding Goal</span>
                 <span>75%</span>
               </div>
-              <div className="w-full bg-red-200 rounded-full h-3 overflow-hidden">
+              <div className="w-full bg-blue-500 rounded-full h-3 overflow-hidden">
                 <motion.div
                   initial={{ width: 0 }}
                   whileInView={{ width: "75%" }}
                   transition={{ duration: 1.2 }}
-                  className="bg-red-500 h-3 rounded-full"
+                  className="bg-blue-900 h-3 rounded-full"
                 />
               </div>
             </div>
 
             <div>
-              <div className="flex justify-between mb-1 text-sm font-medium text-red-800">
+              <div className="flex justify-between mb-1 text-sm font-medium text-blue-800">
                 <span>Funds Raised</span>
                 <span>60%</span>
               </div>
-              <div className="w-full bg-red-200 rounded-full h-3 overflow-hidden">
+              <div className="w-full bg-blue-500 rounded-full h-3 overflow-hidden">
                 <motion.div
                   initial={{ width: 0 }}
                   whileInView={{ width: "60%" }}
                   transition={{ duration: 1.2, delay: 0.3 }}
-                  className="bg-red-600 h-3 rounded-full"
+                  className="bg-blue-900 h-3 rounded-full"
                 />
               </div>
             </div>

@@ -46,8 +46,8 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="flex flex-col"
         >
-          <h2 className="text-3xl md:text-4xl text-red-700 font-bold text-left mb-7">
-            Raha Premium
+          <h2 className="text-3xl md:text-4xl text-blue-900 font-bold text-left mb-7">
+            Raha Premium (Kavagara)
           </h2>
 
           <motion.div

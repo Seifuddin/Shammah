@@ -39,7 +39,7 @@ export default function Bikes() {
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-red-700 mb-4"
+          className="text-3xl md:text-4xl font-bold text-blue-900 mb-4"
         >
           Blessings on Wheels
         </motion.h2>
