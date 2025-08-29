@@ -23,8 +23,9 @@ export default function Navbar() {
 
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
+    { href: '/About', label: 'About' },
     { href: '/sermons', label: 'Sermons' },
+    { href: '/Gallery', label: 'Gallery' },
     { href: '/blog', label: 'Blog' },
     { label: 'Ministries', dropdown: ministries },
     { label: 'Resources', dropdown: resources },

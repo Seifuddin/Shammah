@@ -51,7 +51,7 @@ export default function ContactFm() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="bg-white rounded-md border border-blue-900 shadow-lg p-8 space-y-6"
+          className="bg-blue-50 rounded-md border border-slate-300 shadow-lg p-8 space-y-6"
         >
           <div>
             <label className="block text-blue-900 font-semibold">Name</label>
@@ -61,7 +61,7 @@ export default function ContactFm() {
               value={form.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-blue-900 rounded-md focus:ring-2 focus:ring-indigo-500"
+              className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-indigo-500"
             />
           </div>
 
@@ -73,7 +73,7 @@ export default function ContactFm() {
               value={form.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-blue-900 rounded-md focus:ring-2 focus:ring-indigo-500"
+              className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-indigo-500"
             />
           </div>
 
@@ -85,7 +85,7 @@ export default function ContactFm() {
               value={form.subject}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-blue-900 rounded-md focus:ring-2 focus:ring-indigo-500"
+              className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-indigo-500"
             />
           </div>
 
@@ -97,7 +97,7 @@ export default function ContactFm() {
               onChange={handleChange}
               required
               rows="5"
-              className="w-full px-4 py-2 border border-blue-900 rounded-md focus:ring-2 focus:ring-indigo-500"
+              className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-indigo-500"
             />
           </div>
 

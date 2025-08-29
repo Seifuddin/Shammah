@@ -62,7 +62,7 @@ export default function Sermon() {
             </motion.div>
           ))}
         </div>
-
+{/* Desktop menu 
         <div className="text-center bg-red-600 mt-10 rounded-3xl p-1">
           <a
             href="#"
@@ -72,6 +72,7 @@ export default function Sermon() {
             View All Sermons
           </a>
         </div>
+        */}
       </div>
     </section>
   );

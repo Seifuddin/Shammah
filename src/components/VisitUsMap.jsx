@@ -142,7 +142,7 @@ export default function VisitUsMap({
           <div className="p-8 md:p-10 lg:p-12">
             <div className="space-y-6">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
+                <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-blue-900">
                   Visit Us
                 </h2>
                 <p className="mt-2 text-slate-600">
