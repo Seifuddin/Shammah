@@ -51,7 +51,7 @@ export default function ContactFm() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="bg-blue-50 rounded-md border border-slate-300 shadow-lg p-8 space-y-6"
+          className="bg-white rounded-md border border-slate-300 shadow-lg p-8 space-y-6"
         >
           <div>
             <label className="block text-blue-900 font-semibold">Name</label>

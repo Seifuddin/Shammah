@@ -60,7 +60,7 @@ export default function UpcomingEvents() {
               transition={{ delay: index * 0.2 }}
               className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300 flex flex-col"
             >
-              <div className="flex items-center gap-3 text-blue-700 font-semibold">
+              <div className="flex items-center gap-3 text-red-700 font-semibold">
                 <CalendarDays className="w-5 h-5" />
                 <span>{event.date}</span>
               </div>
