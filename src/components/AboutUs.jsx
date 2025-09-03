@@ -75,7 +75,7 @@ export default function Aboutus() {
             {/* Buttons */}
             <div className="flex flex-wrap gap-4 pt-4">
               <Link
-                href="/visit"
+                href="/About"
                 className="bg-gradient-to-r from-blue-900 to-red-700 text-white font-semibold text-center py-2 px-6 rounded-full hover:opacity-90 transition transform hover:scale-105 shadow-lg"
               >
                 Learn More

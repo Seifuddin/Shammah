@@ -29,7 +29,7 @@ export default function JourneyTimeline() {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl text-red-700 font-bold text-center mb-12">
+        <h2 className="text-3xl text-blue-900 font-bold text-center mb-12">
           Our Journey in Faith
         </h2>
         <div className="relative border-l-4 border-blue-900">
@@ -45,7 +45,7 @@ export default function JourneyTimeline() {
               <span className="absolute -left-4 flex items-center justify-center w-8 h-8 bg-red-700 text-white rounded-full shadow-lg">
                 <Calendar className="w-4 h-4" />
               </span>
-              <h3 className="text-xl text-blue-900 font-semibold">{item.year} — {item.title}</h3>
+              <h3 className="text-xl text-blue-700 font-semibold">{item.year} — {item.title}</h3>
               <p className="mt-2 text-gray-600">{item.description}</p>
             </motion.div>
           ))}

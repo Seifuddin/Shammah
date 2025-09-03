@@ -27,7 +27,7 @@ export default function Footer() {
               { label: "Home", href: "/" },
               { label: "About", href: "/about" },
               { label: "Sermons", href: "/sermons" },
-              { label: "Events", href: "/events" },
+              { label: "Gallery", href: "/Gallery" },
               { label: "Blog", href: "/blog" },
               { label: "Contact", href: "/contact" },
             ].map((link) => (
@@ -57,7 +57,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
           <p className="text-sm mb-3">Email: info@jccm.org</p>
-          <p className="text-sm mb-3">Phone: +254 710 353 535</p>
+          <p className="text-sm mb-3">Phone: +254 000000000</p>
 
           <div className="flex space-x-4 mt-4">
             <a href="https://www.facebook.com/p/JesusChrist-Compassion-Ministries-Intl-100090911132659/" className="hover:text-blue-300">

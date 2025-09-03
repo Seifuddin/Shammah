@@ -5,9 +5,9 @@ import { usePathname } from 'next/navigation';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 const ministries = [
-  { label: 'Youth Ministry', href: '/ministries/youth' },
-  { label: 'Women Ministry', href: '/ministries/women' },
-  { label: 'Men Fellowship', href: '/ministries/men' },
+  { label: 'JCM Headquarters', href: '/ministries/youth' },
+  { label: 'Nairobi CBD Branch', href: '/ministries/women' },
+  { label: 'Mombasa Branch', href: '/ministries/men' },
 ];
 
 const resources = [
@@ -27,7 +27,7 @@ export default function Navbar() {
     { href: '/sermons', label: 'Sermons' },
     { href: '/Gallery', label: 'Gallery' },
     { href: '/blog', label: 'Blog' },
-    { label: 'Ministries', dropdown: ministries },
+    { label: 'Branches', dropdown: ministries },
     { label: 'Resources', dropdown: resources },
     { href: '/contact', label: 'Contact' },
   ];

@@ -17,7 +17,7 @@ export default function SundayCTA() {
         className="relative z-10 max-w-4xl mx-auto"
       >
         {/* Title */}
-        <h2 className="text-3xl text-red-700 font-bold text-center mb-4 leading-tight">
+        <h2 className="text-3xl text-blue-900 font-bold text-center mb-4 leading-tight">
           Join us this Sunday
         </h2>
 
@@ -29,7 +29,7 @@ export default function SundayCTA() {
 
         {/* Service Info */}
         <div className="mb-10">
-          <p className="text-xl font-semibold">📍 Nairobi, Kenya</p>
+          <p className="text-xl text-red-700 font-semibold">📍 Nairobi, Kenya</p>
           <p className="text-md text-gray-800">Sundays • 9:00 AM - 01:00 PM</p>
         </div>
 
@@ -39,7 +39,7 @@ export default function SundayCTA() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-red-700 text-white px-6 py-2 rounded-full shadow-lg hover:bg-blue-900 transition"
+              className="bg-blue-900 text-white px-6 py-2 rounded-full shadow-lg hover:bg-blue-700 transition"
             >
               Plan Your Visit
             </motion.button>

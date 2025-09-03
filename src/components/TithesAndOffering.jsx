@@ -30,10 +30,10 @@ export default function TithesAndOffering() {
   }, [showGivingModal, showBankModal]);
 
   return (
-    <section className="bg-blue-100 py-20 px-6 sm:px-10 lg:px-20 relative z-0">
-      <div className="max-w-5xl mx-auto text-center">
+    <section className=" relative z-0">
+      <div className="text-center md:text-left">
         <motion.h2
-          className="text-3xl text-red-700 font-bold text-center mb-4 leading-tight"
+          className="text-3xl text-blue-900 font-bold mb-4 leading-tight"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -53,7 +53,7 @@ export default function TithesAndOffering() {
 
         {/* Action Buttons */}
         <motion.div
-          className="flex justify-center gap-6 flex-wrap"
+          className="flex justify-center md:justify-start gap-6 flex-wrap"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
