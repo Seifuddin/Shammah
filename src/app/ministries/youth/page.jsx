@@ -1,5 +1,4 @@
 import Aboutus from '@/components/AboutUs'
-import ContactForm from '@/components/ContactForm'
 import ContactFm from '@/components/Contacts'
 import HeroSection from '@/components/Hero'
 import VisitUs from '@/components/Visit'
