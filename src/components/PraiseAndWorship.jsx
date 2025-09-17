@@ -62,7 +62,7 @@ export default function PraiseWorshipTeam() {
   const volunteers = useCounterAnimation(0, 80, 3);
 
   return (
-    <section className="w-full bg-gray-50">
+    <section className="w-full bg-white">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-16">
         {/* Left Column – Text and Featured Image */}
         <motion.div
