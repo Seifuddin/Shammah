@@ -6,10 +6,10 @@ import Link from "next/link";
 
 export default function Aboutus() {
   return (
-    <section className="relative py-20 bg-gradient-to-b from-gray-50 to-gray-200 overflow-hidden">
+    <section className="relative py-20 bg-blue-50">
       {/* Background Accents */}
-      <div className="absolute top-0 -left-20 w-80 h-80 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />
-      <div className="absolute bottom-0 -right-20 w-80 h-80 bg-red-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />
+      <div className="absolute top-0 -left-20 w-80 h-80 bg-blue-30 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />
+      <div className="absolute bottom-0 -right-20 w-80 h-80 bg-red-30 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />
 
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         {/* Section Heading */}
@@ -20,7 +20,7 @@ export default function Aboutus() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-blue-900 mb-4">
             About Us<span className="text-red-700"></span>
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
@@ -58,7 +58,7 @@ export default function Aboutus() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="text-2xl md:text-2xl font-bold text-blue-900">
+            <h3 className="font-serif text-lg md:text-xl font-bold text-red-700">
               Welcome to Our Church
             </h3>
             <p className="text-gray-700 leading-relaxed">
@@ -73,18 +73,12 @@ export default function Aboutus() {
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-wrap pt-4">
               <Link
                 href="/About"
-                className="bg-gradient-to-r from-blue-900 to-red-700 text-white font-semibold text-center py-2 px-6 rounded-full hover:opacity-90 transition transform hover:scale-105 shadow-lg"
+                className="w-full bg-red-700 text-white font-normal text-center p-7 px-7 py-2 rounded-md hover:opacity-90 transition transform hover:scale-105 shadow-lg"
               >
                 Learn More
-              </Link>
-              <Link
-                href="/contact"
-                className="bg-white border border-gray-300 text-blue-900 font-semibold text-center py-2 px-6 rounded-full hover:bg-gray-100 transition transform hover:scale-105 shadow"
-              >
-                Contact Us
               </Link>
             </div>
           </motion.div>

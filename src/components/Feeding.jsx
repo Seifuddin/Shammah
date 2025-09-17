@@ -75,7 +75,7 @@ export default function Feeding() {
         {/* Left: Text + Counters + CTA */}
         <div>
           <motion.h2
-            className="text-3xl md:text-4xl text-blue-900 font-bold text-left mb-6 leading-snug"
+            className="text-2xl md:text-3xl font-serif font-bold text-blue-900 mb-7"
             initial={{ y: -20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
@@ -96,17 +96,17 @@ export default function Feeding() {
           <div className="grid grid-cols-3 gap-6 mb-8 text-center">
             <div>
               <FaUsers className="text-red-600 text-4xl mx-auto mb-2" />
-              <h3 className="text-2xl font-bold text-red-700">{children}+</h3>
+              <h3 className="text-xl font-serif font-bold text-red-700">{children}+</h3>
               <p className="text-sm text-gray-600">Children Reached</p>
             </div>
             <div>
               <FaChild className="text-red-600 text-4xl mx-auto mb-2" />
-              <h3 className="text-2xl font-bold text-red-700">{orphanages}+</h3>
+              <h3 className="text-xl font-serif font-bold text-red-700">{orphanages}+</h3>
               <p className="text-sm text-gray-600">Orphanages Supported</p>
             </div>
             <div>
               <FaHandsHelping className="text-red-600 text-4xl mx-auto mb-2" />
-              <h3 className="text-2xl font-bold text-red-700">
+              <h3 className="text-xl font-serif font-bold text-red-700">
                 {volunteers}+
               </h3>
               <p className="text-sm text-gray-600">Volunteers Involved</p>

@@ -71,10 +71,10 @@ const testimonials = [
 
 export default function Testimonys() {
   return (
-    <section className="w-full bg-gray-100 py-20">
+    <section className="w-full bg-gray-50 py-20">
       <div className="container mx-auto px-4 text-center">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-blue-900 mb-14"
+          className="text-2xl md:text-3xl font-serif font-bold text-blue-900 mb-10"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -101,7 +101,7 @@ export default function Testimonys() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="bg-white px-8 py-10 rounded-md shadow-lg border border-gray-100 h-full flex flex-col items-center"
+                className="bg-amber-100 px-8 py-10 rounded-md shadow-lg border border-gray-100 h-full flex flex-col items-center"
               >
                 <Image
                   src={t.image}
@@ -113,10 +113,10 @@ export default function Testimonys() {
                 <p className="text-gray-700 text-lg italic mb-6 leading-relaxed">
                   “{t.message}”
                 </p>
-                <h3 className="font-semibold text-xl text-blue-900">
+                <h3 className="font-serif font-semibold text-lg text-red-700">
                   {t.name}
                 </h3>
-                <span className="text-sm text-gray-500 tracking-wide uppercase">
+                <span className="text-sm text-blue-950 tracking-wide uppercase">
                   {t.role}
                 </span>
               </motion.div>

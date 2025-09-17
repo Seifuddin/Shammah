@@ -9,7 +9,7 @@ export default function SupportMission() {
         {/* Left: Text Content */}
         <div>
           <motion.h2
-            className="text-2xl md:text-4xl font-extrabold mb-4 text-yellow-600"
+            className="text-2xl md:text-3xl font-serif font-bold text-blue-900 mb-10"
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
@@ -26,17 +26,17 @@ export default function SupportMission() {
           <div className="grid grid-cols-3 gap-4 mb-6 text-center">
             <div>
               <FaUsers className="text-yellow-600 text-3xl mx-auto mb-2" />
-              <h3 className="text-xl font-semibold text-yellow-700">5,000+</h3>
+              <h3 className="text-lg font-serif font-semibold text-yellow-700">5,000+</h3>
               <p className="text-sm text-gray-600">Children Reached</p>
             </div>
             <div>
               <FaChild className="text-yellow-600 text-3xl mx-auto mb-2" />
-              <h3 className="text-xl font-semibold text-yellow-700">100+</h3>
+              <h3 className="text-lg font-serif font-semibold text-yellow-700">100+</h3>
               <p className="text-sm text-gray-600">Orphanages Supported</p>
             </div>
             <div>
               <FaHandsHelping className="text-yellow-600 text-3xl mx-auto mb-2" />
-              <h3 className="text-xl font-semibold text-yellow-700">1,200+</h3>
+              <h3 className="text-lg font-serif font-semibold text-yellow-700">1,200+</h3>
               <p className="text-sm text-gray-600">Volunteers Involved</p>
             </div>
           </div>

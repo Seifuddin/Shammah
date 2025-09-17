@@ -44,11 +44,11 @@ export default function Home() {
       <section className="">
       </section>
 
-      {/* Blog */}
+      {/* Blog 
       <section className="">
         <Aboutus />
       </section>
-
+      */}
       {/* Blog */}
       
 

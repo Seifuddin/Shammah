@@ -39,7 +39,7 @@ export default function Bikes() {
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-blue-900 mb-4"
+          className="text-2xl md:text-3xl font-serif font-bold text-blue-900 mb-4"
         >
           Blessings on Wheels
         </motion.h2>
@@ -81,7 +81,7 @@ export default function Bikes() {
                   className="w-full h-48 md:h-60 object-cover"
                 />
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-blue-900">
+                  <h3 className="text-lg font-serif font-semibold text-blue-900">
                     {item.title}
                   </h3>
                   <p className="text-sm text-gray-600 mt-1">{item.caption}</p>
@@ -90,7 +90,7 @@ export default function Bikes() {
                   <div className="flex flex-wrap gap-3 mt-6">
                     <Link
                       href="/visit"
-                      className="bg-blue-900 text-white text-center py-1 px-6 rounded hover:bg-red-800 transition transform hover:scale-105 shadow-lg"
+                      className="w-full bg-blue-900 font-serif text-white text-center py-2 rounded hover:bg-red-800 transition transform hover:scale-105 shadow-lg"
                     >
                       Learn More
                     </Link>

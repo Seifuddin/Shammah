@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 grid md:grid-cols-4 sm:grid-cols-2 gap-8">
         {/* Logo & Mission */}
         <div>
-          <h2 className="text-2xl font-bold mb-4">Jesus Christ Companion Ministry</h2>
+          <h2 className="text-xl font-serif font-bold mb-4">Jesus Christ Companion Ministry</h2>
           <p className="text-sm leading-relaxed">
             A Christ-centered church committed to spreading the gospel, building
             faith, and serving the community with love and purpose.
@@ -21,7 +21,7 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
+          <h3 className="text-lg font-serif font-semibold mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             {[
               { label: "Home", href: "/" },
@@ -45,7 +45,7 @@ export default function Footer() {
 
         {/* Service Times */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">Service Times</h3>
+          <h3 className="text-lg font-serif font-semibold mb-3">Service Times</h3>
           <ul className="text-sm space-y-2">
             <li>Sunday Worship: 9:00 AM – 1:00 PM</li>
             <li>Midweek Service: Wed & Thur 3:00 PM – 4:00 PM</li>
@@ -55,7 +55,7 @@ export default function Footer() {
 
         {/* Contact & Socials */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
+          <h3 className="text-lg font-serif font-semibold mb-3">Contact Us</h3>
           <p className="text-sm mb-3">Email: info@jccm.org</p>
           <p className="text-sm mb-3">Phone: +254 000000000</p>
 

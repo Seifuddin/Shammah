@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function ChurchTV() {
   return (
-    <section className="relative bg-gradient-to-r from-purple-700 via-indigo-800 to-purple-900 py-16 px-6 lg:px-20 text-white">
+    <section className="relative bg-blue-900 py-16 px-6 lg:px-20 text-white">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left Side Content */}
         <motion.div
@@ -16,7 +16,7 @@ export default function ChurchTV() {
           viewport={{ once: true }}
           className="space-y-6"
         >
-          <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-10">
             Watch JCM Church TV <br /> Anytime, Anywhere 📺
           </h2>
           <p className="text-lg text-gray-200">
@@ -27,7 +27,7 @@ export default function ChurchTV() {
 
           <Link
             href="/watch-live"
-            className="inline-flex items-center px-6 py-3 bg-yellow-400 text-indigo-900 font-semibold rounded-xl shadow-lg hover:bg-yellow-300 transition"
+            className="inline-flex items-center px-6 py-3 bg-yellow-400 text-indigo-900 font-serif font-semibold rounded-xl shadow-lg hover:bg-yellow-300 transition"
           >
             <PlayCircle className="w-6 h-6 mr-2" />
             Watch Live

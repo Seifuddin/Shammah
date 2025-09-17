@@ -46,7 +46,7 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="flex flex-col"
         >
-          <h2 className="text-3xl md:text-4xl text-blue-900 font-bold text-left mb-7">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-blue-900 mb-4">
             Raha Premium (Kavagara)
           </h2>
 
@@ -132,7 +132,7 @@ export default function Projects() {
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
     className="flex items-center justify-center gap-2 flex-1 bg-gradient-to-r from-red-600 to-red-700 
-               text-white px-6 py-3 rounded-full font-semibold shadow-lg 
+               text-white px-6 py-3 rounded-md font-serif font-normal shadow-lg 
                hover:from-red-700 hover:to-red-800 hover:shadow-xl transition-all"
   >
     ❤️ Donate Now
@@ -142,7 +142,7 @@ export default function Projects() {
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
     className="flex items-center justify-center gap-2 flex-1 bg-gradient-to-r from-blue-600 to-blue-700 
-               text-white px-6 py-3 rounded-full font-semibold shadow-lg 
+               text-white px-6 py-3 rounded-md font-serif font-normal shadow-lg 
                hover:from-blue-700 hover:to-blue-800 hover:shadow-xl transition-all"
   >
     🙌 Join as Volunteer

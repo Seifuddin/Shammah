@@ -9,7 +9,7 @@ export default function DonationCTA() {
   const presetAmounts = [500, 1000, 2000, 5000];
 
   return (
-    <section className="relative bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 py-16 px-6 md:px-12 text-center text-white">
+    <section className="relative bg-blue-900 py-16 px-6 md:px-12 text-center text-white">
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
 
@@ -21,7 +21,7 @@ export default function DonationCTA() {
         className="relative max-w-3xl mx-auto"
       >
         {/* Headline */}
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
+        <h2 className="text-2xl md:text-3xl font-serif font-bold mb-4">
           Support God’s Work with Your Giving
         </h2>
         <p className="text-lg md:text-xl mb-8 opacity-90">
@@ -63,7 +63,7 @@ export default function DonationCTA() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => alert(`You donated KES ${amount}`)}
-          className="px-8 py-3 bg-white text-purple-700 font-bold rounded-full shadow-lg hover:bg-gray-100 transition"
+          className="px-8 py-3 bg-white text-purple-700 font-serif font-bold rounded-full shadow-lg hover:bg-gray-100 transition"
         >
           Donate Now
         </motion.button>

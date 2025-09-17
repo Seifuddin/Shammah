@@ -5,7 +5,7 @@ import { Phone, Mail, MessageCircle } from "lucide-react";
 
 export default function Ready() {
   return (
-    <section className="relative py-16 bg-gradient-to-r from-purple-700 via-indigo-700 to-blue-700 text-white overflow-hidden">
+    <section className="relative py-16 bg-blue-900 text-white overflow-hidden">
       <div className="absolute inset-0 bg-black/40" />
 
       <div className="relative container mx-auto px-6 md:px-12 lg:px-20 text-center">
@@ -13,7 +13,7 @@ export default function Ready() {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-5xl font-bold mb-6"
+          className="text-2xl md:text-3xl font-serif font-bold mb-6"
         >
           Ready to Experience God’s Presence?
         </motion.h2>
@@ -40,7 +40,7 @@ export default function Ready() {
             className="flex items-center gap-2 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-2xl shadow-lg transition transform hover:scale-105"
           >
             <Phone className="w-5 h-5" />
-            <span className="font-medium">Call Us</span>
+            <span className="font-serif font-medium">Call Us</span>
           </a>
 
           {/* WhatsApp Button */}
@@ -51,7 +51,7 @@ export default function Ready() {
             className="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 px-6 py-3 rounded-2xl shadow-lg transition transform hover:scale-105"
           >
             <MessageCircle className="w-5 h-5" />
-            <span className="font-medium">WhatsApp</span>
+            <span className="font-serif font-medium">WhatsApp</span>
           </a>
 
           {/* Email Button */}
@@ -60,7 +60,7 @@ export default function Ready() {
             className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-2xl shadow-lg transition transform hover:scale-105"
           >
             <Mail className="w-5 h-5" />
-            <span className="font-medium">Email Us</span>
+            <span className="font-serif font-medium">Email Us</span>
           </a>
         </motion.div>
       </div>

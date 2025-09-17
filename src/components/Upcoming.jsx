@@ -40,7 +40,7 @@ export default function UpcomingEvents() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl font-bold text-blue-900"
+            className="text-2xl md:text-3xl font-serif font-bold text-blue-900 mb-4"
           >
             Upcoming Events
           </motion.h2>
@@ -64,11 +64,11 @@ export default function UpcomingEvents() {
                 <CalendarDays className="w-5 h-5" />
                 <span>{event.date}</span>
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mt-3">{event.title}</h3>
+              <h3 className="text-lg font-serif font-semibold text-blue-900 mt-3">{event.title}</h3>
               <p className="text-gray-600 mt-2">{event.description}</p>
 
-              <div className="mt-4 flex items-center font-semibold text-blue-700 text-sm gap-2">
-                <MapPin className="w-4 h-4 text-blue-700 font-semibold" />
+              <div className="mt-4 flex items-center font-semibold text-red-700 text-sm gap-2">
+                <MapPin className="w-4 h-4 text-red-700 font-semibold" />
                 <span>{event.location}</span>
               </div>
               <p className="text-sm text-gray-500 mt-1">{event.time}</p>

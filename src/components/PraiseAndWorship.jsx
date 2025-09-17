@@ -71,7 +71,7 @@ export default function PraiseWorshipTeam() {
           transition={{ duration: 0.6 }}
           className="flex flex-col"
         >
-          <h2 className="text-3xl md:text-4xl text-blue-900 font-bold text-left mb-6">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-blue-900 mb-4">
             Visit Our Free Medical Camp
           </h2>
 
@@ -130,7 +130,7 @@ export default function PraiseWorshipTeam() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center justify-center gap-2 flex-1 bg-gradient-to-r from-red-600 to-red-700 
-               text-white px-6 py-3 rounded-full font-semibold shadow-lg 
+               text-white px-6 py-3 rounded-md font-serif font-normal shadow-lg 
                hover:from-red-700 hover:to-red-800 hover:shadow-xl transition-all"
             >
               ❤️ Donate Now
@@ -140,7 +140,7 @@ export default function PraiseWorshipTeam() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center justify-center gap-2 flex-1 bg-gradient-to-r from-blue-600 to-blue-700 
-               text-white px-6 py-3 rounded-full font-semibold shadow-lg 
+               text-white px-6 py-3 rounded-md font-serif font-normal shadow-lg 
                hover:from-blue-700 hover:to-blue-800 hover:shadow-xl transition-all"
             >
               🙌 Join as Volunteer
@@ -149,10 +149,10 @@ export default function PraiseWorshipTeam() {
         </motion.div>
       </div>
 
-      {/* ✅ Improved Stats Section with Lucide Icons */}
-      <div className="bg-gradient-to-r from-blue-600 via-indigo-700 to-purple-700 py-16">
+      {/* ✅ Improved Stats Section with Lucide Icons 
+      <div className="bg-blue-900 via-indigo-700 to-purple-700 py-10">
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Patients Served */}
+           Patients Served 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -163,11 +163,11 @@ export default function PraiseWorshipTeam() {
             <div className="w-14 h-14 flex items-center justify-center bg-white/20 rounded-full mb-4">
               <Users className="w-7 h-7 text-white" />
             </div>
-            <p className="text-4xl font-extrabold text-white">{patients}+</p>
+            <p className="text-2xl font-serif font-extrabold text-white">{patients}+</p>
             <p className="text-gray-200 mt-2 font-medium">Patients Served</p>
           </motion.div>
 
-          {/* Doctors Participated */}
+           Doctors Participated 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -178,11 +178,11 @@ export default function PraiseWorshipTeam() {
             <div className="w-14 h-14 flex items-center justify-center bg-white/20 rounded-full mb-4">
               <Stethoscope className="w-7 h-7 text-white" />
             </div>
-            <p className="text-4xl font-extrabold text-white">{doctors}+</p>
+            <p className="text-2xl font-serif font-extrabold text-white">{doctors}+</p>
             <p className="text-gray-200 mt-2 font-medium">Doctors Participated</p>
           </motion.div>
 
-          {/* Volunteers Engaged */}
+           Volunteers Engaged 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -193,11 +193,12 @@ export default function PraiseWorshipTeam() {
             <div className="w-14 h-14 flex items-center justify-center bg-white/20 rounded-full mb-4">
               <Handshake className="w-7 h-7 text-white" />
             </div>
-            <p className="text-4xl font-extrabold text-white">{volunteers}+</p>
+            <p className="text-2xl font-serif font-extrabold text-white">{volunteers}+</p>
             <p className="text-gray-200 mt-2 font-medium">Volunteers Engaged</p>
           </motion.div>
         </div>
       </div>
+      */}
 
       {/* Modal Image Viewer */}
       {selectedImage && (
