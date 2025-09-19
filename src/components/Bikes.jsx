@@ -65,7 +65,7 @@ export default function Bikes() {
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-          className="rounded-lg container"
+          className="rounded-md container"
         >
           {group.map((item, i) => (
             <SwiperSlide key={i}>
@@ -73,7 +73,7 @@ export default function Bikes() {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: i * 0.2 }}
-                className="bg-white rounded-md shadow hover:shadow-lg transition duration-300 overflow-hidden"
+                className="bg-white rounded-md shadow-md hover:shadow-lmd transition duration-300 overflow-hidden"
               >
                 <img
                   src={item.img}
