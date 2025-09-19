@@ -39,6 +39,7 @@ export default function Home() {
       <section>
         <HeroSection />
         <UpcomingEvents />
+        <ChurchTV />
       </section>
        {/* Events */}
       <section className="">
@@ -72,8 +73,6 @@ export default function Home() {
       {/* About Us */}
       <section className="">
         <PraiseAndWorship />
-        <Testimonys />
-        <ChurchTV />
       </section>
 
       {/* Events */}

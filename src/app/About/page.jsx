@@ -6,11 +6,12 @@ import Branches from '@/components/Branches';
 import Tithes from '@/components/Tithes';
 import CorePrinciples from '../../components/CorePrinciples';
 import SundayCTA from '@/components/SundayCTA';
+import Testimonys from '@/components/Testmonies';
 
 export default function AboutPage() {
   return (
     <>
-      <main className="relative">
+      <main className="relative overflow-x-hidden">
         <Aboutus />
         <CorePrinciples />
         <JourneyTimeline />
@@ -18,6 +19,7 @@ export default function AboutPage() {
         <Ministry />
         <Tithes />
         <SundayCTA />
+        <Testimonys />
       </main>
     </>
   );
